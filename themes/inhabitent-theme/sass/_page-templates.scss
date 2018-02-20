@@ -2,4 +2,22 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+//layout for archive.php, page.php, single.php
+.site-content{
+	display: flex;
+	justify-content: space-around;
+}
+
+.content-area{
+  width: 70%;
+	border-right: $solid__border;
+}
+
+.widget-area{
+	width: 29%;
+}
+
+//archive.php
+
+
 /* Front page */

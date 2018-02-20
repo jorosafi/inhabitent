@@ -222,6 +222,14 @@ td,
 th {
   padding: 0; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  width: 1120px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -246,14 +254,32 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
-h1 {
+.page-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  width: 75%; }
+
+.entry-title {
   color: white;
   background: #248A83;
   display: block;
-  width: 522px;
-  text-transform: uppercase; }
-  h1 a:hover {
+  max-width: 522px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  max-width: 75%;
+  line-height: 1.25;
+  padding: 7px;
+  letter-spacing: 2px; }
+  .entry-title a {
+    color: white; }
+  .entry-title a:hover {
     color: #a1a1a1; }
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -299,7 +325,9 @@ big {
   background: #248A83;
   color: white;
   text-transform: uppercase;
-  width: 342px; }
+  max-width: 60%;
+  padding: 5px 20px;
+  text-align: right; }
   .entry-meta a {
     text-decoration: none;
     color: white; }
@@ -567,10 +595,13 @@ ul {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget .widget-title {
+    font-size: 1.5rem;
+    color: #2f1339;
+    background: none; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -580,6 +611,22 @@ ul {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+article {
+  padding: 30px; }
+
+.entry-header {
+  position: relative; }
+  .entry-header .entry-title {
+    position: absolute;
+    bottom: 340px; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 9px;
+    left: 339px; }
+  .entry-header .wp-post-image {
+    width: 800px;
+    max-width: 100%; }
+
 .sticky {
   display: block; }
 
@@ -677,4 +724,32 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.content-area {
+  width: 70%;
+  border-right: 1px solid #e1e1e1; }
+
+.widget-area {
+  width: 29%; }
+
 /* Front page */
+.footer-html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: url("../../images/dark-wood@2x.png");
+  color: white; }

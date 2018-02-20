@@ -4,6 +4,28 @@
 
 /* Posts and pages */
 
+article{
+	padding: 30px;
+}
+
+//header (img, title, meta) for posts
+.entry-header{
+	position: relative;
+	.entry-title{
+		position: absolute;
+		bottom: 340px;
+	}
+	.entry-meta{
+		position: absolute;
+		bottom: 9px;
+		left: 339px;
+	}
+	.wp-post-image{
+		width: 800px;
+		max-width: 100%;
+	}
+}//end .entry-header
+
 .sticky {
 	display: block;
 }
