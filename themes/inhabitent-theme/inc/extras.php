@@ -25,11 +25,11 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function my_login_logo() { ?>
 	<style type="text/css">
 			#login h1 a, .login h1 a {
-					background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo/inhabitent-logo-text-dark.svg);
-	height:65px;
-	width:320px;
-	background-size: 320px 65px;
-	background-repeat: no-repeat;
+				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo/inhabitent-logo-text-dark.svg);
+				height:65px;
+				width:320px;
+				background-size: 320px 65px;
+				background-repeat: no-repeat;
 				padding-bottom: 30px;
 			}
 
@@ -52,3 +52,23 @@ function inhabitent_login_title(){
 	return 'Inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+//changes header in about.php
+function about_page_hero() {
+	if( !is_page_template('page-templates/about.php') ) {
+		return;
+	}
+
+		$img = CFS () -> get('header-img');
+		if(!$img){
+			return;
+		}
+		$custom_css = 
+			".page-template-about .entry-header{
+									background: url({$img});
+								}";
+	wp_add_inline_style( 'inhabitent-style', $custom_css );
+	}
+
+add_action( 'wp_enqueue_scripts', 'about_page_hero' );
+

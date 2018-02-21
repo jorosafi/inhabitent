@@ -738,6 +738,18 @@ object {
 .widget-area {
   width: 29%; }
 
+.page-template-about .entry-header {
+  position: static;
+  display: block;
+  width: 100vw;
+  height: 100vh; }
+
+.page-template-about .entry-title {
+  position: static;
+  font-size: 3rem;
+  background: none;
+  color: black; }
+
 /* Front page */
 .footer-html {
   display: -webkit-box;
