@@ -1,3 +1,8 @@
+footer{
+  width: 100vw;
+  min-width: $site__width
+}
+
 .footer-html{
   display: flex;
   justify-content: space-around;

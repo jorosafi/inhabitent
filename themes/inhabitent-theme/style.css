@@ -227,8 +227,19 @@ th {
           box-sizing: border-box; }
 
 body {
-  width: 1120px;
   margin: 0 auto; }
+
+.hfeed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
@@ -465,6 +476,10 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header {
+  width: 100vh;
+  min-width: 1120px; }
+
 /* Links */
 a {
   color: #248A83;
@@ -610,6 +625,9 @@ ul {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-content {
+  width: 1120px; }
+
 /* Posts and pages */
 article {
   padding: 30px; }
@@ -733,7 +751,8 @@ object {
 
 .content-area {
   width: 70%;
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1;
+  margin: 0 auto; }
 
 .widget-area {
   width: 29%; }
@@ -750,7 +769,15 @@ object {
   background: none;
   color: black; }
 
+.page-template-about .content-area {
+  border: none;
+  width: 100%; }
+
 /* Front page */
+footer {
+  width: 100vw;
+  min-width: 1120px; }
+
 .footer-html {
   display: -webkit-box;
   display: -ms-flexbox;

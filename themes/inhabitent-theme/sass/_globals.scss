@@ -3,6 +3,14 @@
 }
 
 body{
-  width: $site__width;
+  // width: $site__width;
   margin: 0 auto;
+}
+
+//flex for main page container
+.hfeed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }

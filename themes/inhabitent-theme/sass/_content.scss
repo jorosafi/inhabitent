@@ -2,6 +2,11 @@
 # Content
 --------------------------------------------------------------*/
 
+// Width of content area
+.site-content{
+	width: $site__width;
+}
+
 /* Posts and pages */
 
 article{
