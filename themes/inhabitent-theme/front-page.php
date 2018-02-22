@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="home-hero">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logo/inhabitent-logo-tent-white.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo/inhabitent-logo-full.svg" alt="">
 			</div>
 
 			<div class="shop-stuff">
@@ -34,9 +34,9 @@ get_header(); ?>
 							<a href="<?php echo get_term_link($term); ?>" class="btn"><?php echo $term->name; ?> Stuff</a>
 						</p>
 					</div>
-			<?php endforeach; ?>
+					<?php endforeach; ?>
 				</div>
-			<?php endif; ?>
+				<?php endif; ?>
 			</div><!-- Shop Stuff  -->
 
 			<div class="inhabitent-journal">

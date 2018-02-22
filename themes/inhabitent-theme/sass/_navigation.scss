@@ -3,8 +3,47 @@
 --------------------------------------------------------------*/
 //header style
 .site-header{
-	width: 100vh;
+	width: 100vw;
 	min-width: $site__width;
+	border-bottom: $solid__border;
+	height: 60px;
+	position: fixed;
+	background: rgba(255, 255, 255, 0.8)
+}
+
+.nav-container{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	width: $site__width;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.nav-logo{
+	background:url("../../images/logo/inhabitent-logo-tent.svg"),;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.home .nav-logo
+{
+	background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.main-navigation ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	li{
+		padding: 15px;
+	}
 }
 
 /* Links */
@@ -31,18 +70,10 @@ a {
 }
 
 /* Menus */
-
-.main-navigation {
-	display: block;
-	width: 100%;
-}
-
 ul {
 	list-style: none;}
 
 .primary-menu{
-	display: block;
-	width: 500px;
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -55,38 +86,3 @@ ul {
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}

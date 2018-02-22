@@ -292,6 +292,11 @@ h3 {
   font-size: 1.2rem;
   text-transform: uppercase; }
 
+.menu-item {
+  font-size: 1rem;
+  font-family: "Novovento Sans Web", sans-serif;
+  text-transform: uppercase; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -477,8 +482,54 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .site-header {
-  width: 100vh;
-  min-width: 1120px; }
+  width: 100vw;
+  min-width: 1120px;
+  border-bottom: 1px solid #e1e1e1;
+  height: 60px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8); }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.nav-logo {
+  background: url("../../images/logo/inhabitent-logo-tent.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.home .nav-logo {
+  background: url("../../images/logo/inhabitent-logo-tent-white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .main-navigation ul li {
+    padding: 15px; }
 
 /* Links */
 a {
@@ -492,61 +543,24 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  display: block;
-  width: 100%; }
-
 ul {
   list-style: none; }
 
-.primary-menu {
-  display: block;
-  width: 500px; }
-  .primary-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-    .primary-menu ul li {
-      display: inline-block;
-      width: 100px;
-      color: red; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.primary-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .primary-menu ul li {
+    display: inline-block;
+    width: 100px;
+    color: red; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -626,7 +640,8 @@ ul {
 # Content
 --------------------------------------------------------------*/
 .site-content {
-  width: 1120px; }
+  width: 1120px;
+  margin-top: 60px; }
 
 /* Posts and pages */
 article {
@@ -756,6 +771,10 @@ object {
 
 .widget-area {
   width: 29%; }
+
+.home .content-area {
+  width: 100%;
+  border: none; }
 
 .page-template-about .entry-header {
   position: static;
