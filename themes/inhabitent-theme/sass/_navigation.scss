@@ -28,7 +28,22 @@
 	height: 50px;
 }
 
-.home .nav-logo
+//custom nav bar for home page and about page
+.page-template-about, .home{
+	.site-header{
+		background: none;
+		border: none;
+		position: absolute;
+		.menu-item a{
+			color: white;
+			&:hover{
+				color: $color__brand-orange;
+			}
+		}
+	}
+}
+
+.home .nav-logo, .page-template-about .nav-logo
 {
 	background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
 	background-size: contain;

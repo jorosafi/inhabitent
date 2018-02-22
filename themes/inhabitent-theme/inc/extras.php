@@ -65,7 +65,9 @@ function about_page_hero() {
 		}
 		$custom_css = 
 			".page-template-about .entry-header{
-									background: url({$img});
+									background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url({$img});
+									background-size: cover;
+									background-repeat: no-repeat;
 								}";
 	wp_add_inline_style( 'inhabitent-style', $custom_css );
 	}

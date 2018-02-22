@@ -530,7 +530,16 @@ textarea {
   width: 50px;
   height: 50px; }
 
-.home .nav-logo {
+.page-template-about .site-header, .home .site-header {
+  background: none;
+  border: none;
+  position: absolute; }
+  .page-template-about .site-header .menu-item a, .home .site-header .menu-item a {
+    color: white; }
+    .page-template-about .site-header .menu-item a:hover, .home .site-header .menu-item a:hover {
+      color: #d99054; }
+
+.home .nav-logo, .page-template-about .nav-logo {
   background: url("../../images/logo/inhabitent-logo-tent-white.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -768,14 +777,6 @@ object {
 .widget-area {
   width: 29%; }
 
-.home .site-header {
-  background: none;
-  border: none; }
-  .home .site-header .menu-item a {
-    color: white; }
-    .home .site-header .menu-item a:hover {
-      color: #d99054; }
-
 .home .site-content {
   width: 100vw; }
   .home .site-content .content-area {
@@ -882,6 +883,33 @@ object {
         .home .inhabitent-journal ul li .entry-meta .entry-title a {
           color: #248A83;
           width: 100%; }
+
+.page-template-about .site-content {
+  width: 100vw; }
+  .page-template-about .site-content .content-area .site-main {
+    width: 100%;
+    margin: 0; }
+    .page-template-about .site-content .content-area .site-main article {
+      padding: 0; }
+      .page-template-about .site-content .content-area .site-main article .entry-header {
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .page-template-about .site-content .content-area .site-main article .entry-header h1 {
+          margin: 0;
+          color: white; }
+      .page-template-about .site-content .content-area .site-main article .entry-content {
+        width: 800px;
+        margin: 3rem auto; }
+        .page-template-about .site-content .content-area .site-main article .entry-content h2 {
+          text-align: center; }
 
 .page-template-about .entry-header {
   position: static;
