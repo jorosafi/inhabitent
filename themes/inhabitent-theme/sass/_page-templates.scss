@@ -3,10 +3,6 @@
 --------------------------------------------------------------*/
 
 //layout for archive.php, page.php, single.php
-.site-content{
-	display: flex;
-	justify-content: space-around;
-}
 
 .content-area{
   width: 70%;
@@ -19,26 +15,87 @@
 }
 
 //front-page.php
-.home .site-content{
-	width: 100vw;
-}
+	//custom nav bar for home
+		.home{
+			.site-header{
+				background: none;
+				border: none;
+				.menu-item a{
+					color: white;
+					&:hover{
+						color: $color__brand-orange;
+					}
+				}
+			}
+		}
 
-.home .content-area{
-	border: none;
-	margin-top: none;
-}
+	//custom page layout for front page content
+		.home {
+			.site-content{
+				width: 100vw;
+				.content-area{
+					border: none;
+					margin-top: none;
+					width: 100%;
+					.site-main{
+						margin: 0 auto;
+						.home-hero{
+							width: 100vw;
+							height: 100vh;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url("../../images/home-hero.jpg");
+							background-size: cover;
+							background-repeat: no-repeat;
+						}
+					}
+				}
+			}
+		}
+	
+	//layout for Shop Stuff section
+		.home{
+			.shop-stuff{
+				min-width: $site__width;
+				.product-type-blocks{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					align-items: center;
+					.product-type-block-wrapper{
+						border: $solid__border;
+						border-top: 5px solid #e1e1e1;
+						max-width: 23%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						padding: 10px;
+						text-align: center;
+						&:hover{
+							border-color: $color__brand-orange;
+						}
+						img{
+							height: 80px;
+						}
+						.btn{
+							display: block;
+							background: $color__brand-green;
+							color: white;
+							width: 135px;
+							padding: 12px 0;
+							text-transform: uppercase;
+							margin: none;
+							&:hover{
+								background: darken($color__brand-green, 10%);
+							}
+						}
+					}
+				}
+			}
+		}
 
-.home-hero{
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: url("../../images/home-hero.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-}
+
 
 //archive.php
 

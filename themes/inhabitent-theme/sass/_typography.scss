@@ -62,10 +62,29 @@ h3{
 	text-transform: uppercase;
 }
 
+//custom fonts for front-page
+.home{
+	h2{
+			font-size: 2.4rem;
+			font-weight: 400;
+			margin-bottom: 3.75rem;
+			text-transform: uppercase;
+			text-align: center;
+	}
+	.product-type-block-wrapper{
+		.btn{
+			font-family: $font__headings;
+		}
+	}
+}
+
 /* Copy */
 
 p {
-	margin-bottom: $base__space-unit;
+	margin: 0;
+	line-height: 1.75;
+	font-family: $font__main;
+	padding: 1rem 0;
 }
 
 dfn, cite, em, i {

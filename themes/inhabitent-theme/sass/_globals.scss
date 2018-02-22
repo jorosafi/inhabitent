@@ -3,6 +3,12 @@
 }
 
 //flex for main page container
+.site-content{
+	display: flex;
+  justify-content: space-around;
+  width: $site__width;
+}
+
 .site-main{
   display: flex;
   flex-direction: column;
