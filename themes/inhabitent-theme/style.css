@@ -226,10 +226,7 @@ th {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-body {
-  margin: 0 auto; }
-
-.hfeed {
+.site-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,22 +593,6 @@ ul {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -639,7 +620,7 @@ ul {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site-content {
+.site-main {
   width: 1120px;
   margin-top: 60px; }
 
@@ -772,9 +753,29 @@ object {
 .widget-area {
   width: 29%; }
 
+.home .site-content {
+  width: 100vw; }
+
 .home .content-area {
-  width: 100%;
-  border: none; }
+  border: none;
+  margin-top: none; }
+
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../images/home-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute; }
 
 .page-template-about .entry-header {
   position: static;
