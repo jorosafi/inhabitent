@@ -190,6 +190,20 @@
 				font-family: $font__headings;
 			}
 		}
+		.inhabitent-journal{
+			.entry-meta{
+				font-size: 0.75rem;
+				color: $color__brand-medium-grey;;
+				text-transform: capitalize;
+				text-align: left;
+				padding: 10px;
+				.entry-title{
+					line-height: 1.25;
+					font-size: 1.3rem;
+					font-weight: 700;
+				}
+			}
+		}
 	}
 
 //About Page
@@ -228,6 +242,16 @@
 				text-transform: uppercase;
 				font-family: $font__headings;
 			}
+		}
+	}
+
+//Adventure Page
+	.adventure{
+		.byline{
+			font-family: $font__headings;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			color: $color__brand-purple;
 		}
 	}
 

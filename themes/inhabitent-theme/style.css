@@ -432,6 +432,17 @@ a {
 .home .product-type-block-wrapper .btn {
   font-family: "Novecento", sans-serif; }
 
+.home .inhabitent-journal .entry-meta {
+  font-size: 0.75rem;
+  color: #808080;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 10px; }
+  .home .inhabitent-journal .entry-meta .entry-title {
+    line-height: 1.25;
+    font-size: 1.3rem;
+    font-weight: 700; }
+
 .page-template-about h1 {
   margin: 0;
   color: white;
@@ -452,6 +463,12 @@ a {
   size: 1.2rem;
   text-transform: uppercase;
   font-family: "Novecento", sans-serif; }
+
+.adventure .byline {
+  font-family: "Novecento", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #2f1339; }
 
 .business-info h3 {
   color: #d99054;
@@ -923,6 +940,7 @@ object {
 
 .home .inhabitent-journal ul {
   margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,32 +948,67 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
   .home .inhabitent-journal ul li {
     border: 1px solid #e1e1e1;
-    margin: 0 12px; }
+    margin-bottom: 12px;
+    width: 32%; }
+    .home .inhabitent-journal ul li .img {
+      height: 250px; }
     .home .inhabitent-journal ul li .entry-meta {
       background: none;
       max-width: 100%;
-      color: #248A83; }
+      min-height: 150px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative; }
+      .home .inhabitent-journal ul li .entry-meta div {
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%; }
       .home .inhabitent-journal ul li .entry-meta .entry-title {
         position: static;
         background: none;
         margin: 0;
         max-width: 100%;
-        line-height: 1.25;
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-align: left; }
+        text-align: left;
+        padding: 7px 0 18px 0px;
+        width: 100%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%; }
         .home .inhabitent-journal ul li .entry-meta .entry-title a {
           color: #248A83;
           width: 100%; }
+      .home .inhabitent-journal ul li .entry-meta button {
+        background: none;
+        border: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 13px; }
+        .home .inhabitent-journal ul li .entry-meta button .black-btn {
+          display: block;
+          border: 1px solid black;
+          font-family: "Novecento", sans-serif;
+          font-size: 0.9rem;
+          width: 125px;
+          padding: 8px 0px;
+          color: black;
+          text-align: center;
+          -ms-flex-preferred-size: 40%;
+              flex-basis: 40%;
+          background: none; }
 
 .page-template-about .site-content {
   width: 100vw; }
