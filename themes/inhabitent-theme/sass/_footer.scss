@@ -13,6 +13,15 @@ footer{
   flex-wrap: wrap;
   flex-direction: row;
   color: white;
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      height: 50px;
+      width: auto;
+    }
+  }
   p{
     padding: 5px;
   }
@@ -24,6 +33,14 @@ footer{
     li{
       padding: 0 10px;
       font-size: 20px;
+    }
+  }
+}
+
+.business-hours{
+  p{
+    strong::after{
+      content: "\00a0";
     }
   }
 }

@@ -1078,6 +1078,19 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   color: white; }
+  .footer-html .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer-html .footer-logo img {
+      height: 50px;
+      width: auto; }
   .footer-html p {
     padding: 5px; }
   .footer-html ul {
@@ -1093,3 +1106,6 @@ footer {
     .footer-html ul li {
       padding: 0 10px;
       font-size: 20px; }
+
+.business-hours p strong::after {
+  content: "\00a0"; }
