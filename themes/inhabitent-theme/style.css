@@ -296,7 +296,8 @@ th {
 # Typography
 --------------------------------------------------------------*/
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #404040; }
 
 body,
 button,
@@ -305,56 +306,26 @@ select,
 textarea {
   color: #404040;
   font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  font-family: "Novecento", sans-serif; }
-
-.page-title {
-  font-size: 2.4rem;
+  font-family: "Novecento", sans-serif;
+  color: #404040;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  border-bottom: 1px solid #e1e1e1;
-  width: 75%; }
+  font-weight: bold;
+  line-height: 1.25; }
 
-.entry-title {
-  color: white;
-  background: #248A83;
-  display: block;
-  max-width: 522px;
-  text-transform: uppercase;
-  font-size: 2.1rem;
-  max-width: 75%;
-  line-height: 1.25;
-  padding: 7px;
-  letter-spacing: 2px; }
-  .entry-title a {
-    color: white; }
-  .entry-title a:hover {
-    color: #a1a1a1; }
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  color: #2f1339;
+  font-size: 2.1rem; }
 
 h3 {
-  color: #d99054;
-  font-size: 1.2rem;
-  text-transform: uppercase; }
-
-.menu-item {
-  font-size: 1rem;
-  font-family: "Novecento", sans-serif;
-  text-transform: uppercase; }
-
-.home h2 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  margin-bottom: 3.75rem;
-  text-transform: uppercase;
-  text-align: center; }
-
-.home .product-type-block-wrapper .btn {
-  font-family: "Novecento", sans-serif; }
+  font-size: 1.8rem; }
 
 /* Copy */
 p {
@@ -399,18 +370,93 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.menu-item {
+  font-size: 1rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+a {
+  color: #248A83;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+.home .menu-item a, .page-template-about .menu-item a {
+  color: white;
+  text-shadow: 1px 1px 2px #323232; }
+  .home .menu-item a:hover, .page-template-about .menu-item a:hover {
+    color: #d99054; }
+
+.entry-title {
+  color: white;
+  background: #248A83;
+  max-width: 75%;
+  padding: 7px;
+  font-size: 2.1rem; }
+  .entry-title a {
+    color: white; }
+  .entry-title a:hover {
+    color: #a1a1a1; }
+
 .entry-meta {
   background: #248A83;
   color: white;
   text-transform: uppercase;
   max-width: 60%;
   padding: 5px 20px;
-  text-align: right; }
+  text-align: right;
+  font-size: 1rem;
+  font-family: "Novecento", sans-serif; }
   .entry-meta a {
     text-decoration: none;
     color: white; }
   .entry-meta a:hover {
     color: #f0e4d1; }
+
+.home h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.home h3 {
+  font-family: "Merriweather", sans-serif;
+  size: 3rem;
+  font-weight: 400; }
+
+.home .product-type-block-wrapper .btn {
+  font-family: "Novecento", sans-serif; }
+
+.page-template-about h1 {
+  margin: 0;
+  color: white;
+  font-size: 3rem; }
+
+.widget-area h2 {
+  font-size: 1.5rem; }
+
+.post-type-archive-product h2 {
+  font-size: 1rem;
+  font-family: "Merriweather", sans-serif;
+  background: none; }
+  .post-type-archive-product h2 a {
+    color: #2f1339; }
+
+.post-type-archive-product p a {
+  color: #248A83;
+  size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif; }
+
+.business-info h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -577,10 +623,6 @@ textarea {
   background: none;
   border: none;
   position: absolute; }
-  .page-template-about .site-header .menu-item a, .home .site-header .menu-item a {
-    color: white; }
-    .page-template-about .site-header .menu-item a:hover, .home .site-header .menu-item a:hover {
-      color: #d99054; }
 
 .home .nav-logo, .page-template-about .nav-logo {
   background: url("../../images/logo/inhabitent-logo-tent-white.svg");
@@ -602,17 +644,6 @@ textarea {
   .main-navigation ul li {
     padding: 15px; }
 
-/* Links */
-a {
-  color: #248A83;
-  text-decoration: none; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 ul {
   list-style: none; }
@@ -630,8 +661,7 @@ ul {
           justify-content: flex-end; }
   .primary-menu ul li {
     display: inline-block;
-    width: 100px;
-    color: red; }
+    width: 100px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -945,9 +975,6 @@ object {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .page-template-about .site-content .content-area .site-main article .entry-header h1 {
-          margin: 0;
-          color: white; }
       .page-template-about .site-content .content-area .site-main article .entry-content {
         width: 800px;
         margin: 3rem auto; }
@@ -962,9 +989,7 @@ object {
 
 .page-template-about .entry-title {
   position: static;
-  font-size: 3rem;
-  background: none;
-  color: black; }
+  background: none; }
 
 .page-template-about .content-area {
   border: none;

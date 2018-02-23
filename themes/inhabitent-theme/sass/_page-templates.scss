@@ -141,10 +141,6 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;	
-						h1{
-						margin: 0;
-						color: white;
-						}
 					}
 					.entry-content{
 						width: 800px;;
@@ -167,9 +163,7 @@
 }
 .page-template-about .entry-title{
 	position: static;
-	font-size: 3rem;
 	background: none;
-	color: black;
 }
 
 .page-template-about .content-area{
