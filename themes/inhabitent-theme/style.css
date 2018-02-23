@@ -470,10 +470,18 @@ a {
   text-transform: uppercase;
   color: #2f1339; }
 
-.business-info h3 {
+.footer-html h3 {
   color: #d99054;
   font-size: 1.2rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif;
+  font-weight: bold; }
+
+.site-footer .copyright {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1051,9 +1059,13 @@ object {
 /* Front page */
 footer {
   width: 100vw;
-  min-width: 1120px; }
+  min-width: 1120px;
+  background: url("../../images/dark-wood@2x.png"); }
 
 .footer-html {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,5 +1077,19 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: url("../../images/dark-wood@2x.png");
   color: white; }
+  .footer-html p {
+    padding: 5px; }
+  .footer-html ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .footer-html ul li {
+      padding: 0 10px;
+      font-size: 20px; }

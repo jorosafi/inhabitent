@@ -256,9 +256,20 @@
 	}
 
 //Footer fonts
-	.business-info h3{
+	.footer-html h3{
 		color: $color__brand-orange;
 		font-size: 1.2rem;
 		text-transform: uppercase;
+		font-family: $font__headings;
+		font-weight: bold;
 	}
+
+	.site-footer{
+    .copyright{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: $font__headings;
+  }
+}
 

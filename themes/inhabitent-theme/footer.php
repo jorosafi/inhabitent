@@ -33,9 +33,10 @@
 					<div class="footer-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/inhabitent-logo-text.svg)"></div>
 				</div> <!--end footer-html -->
 
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div class="copyright">
+					<p>Copyright 	&copy; 2017 Inhabitent</p>
 				</div><!-- .site-info -->
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
