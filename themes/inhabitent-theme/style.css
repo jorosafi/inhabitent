@@ -468,6 +468,13 @@ a {
   text-transform: uppercase;
   font-family: "Novecento", sans-serif; }
 
+.post-type-archive-product .page-header .product-type-blocks p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Novecento", sans-serif; }
+  .post-type-archive-product .page-header .product-type-blocks p:hover {
+    color: #2f1339; }
+
 .adventure .byline {
   font-family: "Novecento", sans-serif;
   font-size: 1.2rem;
@@ -624,7 +631,8 @@ textarea {
   border-bottom: 1px solid #e1e1e1;
   height: 60px;
   position: fixed;
-  background: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 100; }
 
 .nav-container {
   display: -webkit-box;
@@ -871,13 +879,17 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.content-area {
-  width: 70%;
-  border-right: 1px solid #e1e1e1;
+.blog .site-content, .page .site-content, .single .site-content, .page .site-content {
   margin: 0 auto; }
-
-.widget-area {
-  width: 29%; }
+  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .page .site-content .content-area {
+    width: 70%;
+    border-right: 1px solid #e1e1e1;
+    margin-top: 60px; }
+    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .page .site-content .content-area .site-main {
+      width: 100%; }
+  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .page .site-content .widget-area {
+    width: 30%;
+    margin-top: 60px; }
 
 .home .site-content {
   width: 100vw; }
@@ -1038,7 +1050,8 @@ object {
           flex-wrap: wrap;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      margin-bottom: 4rem; }
       .post-type-archive-product .site-content .content-area .product-list .type-product {
         width: 24%;
         border: 1px solid #e1e1e1;
@@ -1075,6 +1088,28 @@ object {
                   justify-content: space-between;
           padding: 15px 10px;
           margin: 0; }
+
+.post-type-archive-product .page-header {
+  width: 1120px;
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 1.5rem;
+  margin-bottom: 3rem; }
+  .post-type-archive-product .page-header .shop-stuff {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 500px; }
+    .post-type-archive-product .page-header .shop-stuff .product-type-blocks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
 
 .page-template-about .site-content {
   width: 100vw; }

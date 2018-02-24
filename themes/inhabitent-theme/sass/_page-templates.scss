@@ -2,17 +2,30 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-//layout for archive.php, page.php, single.php
+//layout for home.php, page.php, single.php
 
-	.content-area{
-		width: 70%;
-		border-right: $solid__border;
-		margin: 0 auto;
+	.blog, .page, .single, .page{
+		.site-content{
+			margin: 0 auto;
+			.content-area{
+				width: 70%;
+				border-right: $solid__border;
+				margin-top: 60px;
+				.site-main{
+					width: 100%;
+				}
+			}
+			.widget-area{
+				width: 30%;
+				margin-top: 60px;
+				//widget styling in widgets.scss
+			}
+		}
 	}
 
-	.widget-area{
-		width: 29%;
-	}
+
+
+
 
 //front-page.php
 
@@ -153,61 +166,77 @@
 
 //archive-product.php
 
-.post-type-archive-product{
-	.site-content{
-		width: $site__width;
-		margin: 0 auto;
-		.content-area{
-			margin: 0;
-			width: 100%;
-			border: none;
-			.product-list{
+	.post-type-archive-product{
+		.site-content{
+			width: $site__width;
+			margin: 0 auto;
+			.content-area{
+				margin: 0;
 				width: 100%;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				.type-product{
-					width: 24%;
-					border: $solid__border;
-					padding: 0;
-					margin: 5px;
-					.entry-header{
-						position: static;
-						overflow: hidden;
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						border-bottom: solid #e1e1e1 4px;
-						img{
-							max-height: 250px;
-							max-width: none;
-							width: auto;
+				border: none;
+				.product-list{
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin-bottom: 4rem;
+					.type-product{
+						width: 24%;
+						border: $solid__border;
+						padding: 0;
+						margin: 5px;
+						.entry-header{
+							position: static;
+							overflow: hidden;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							border-bottom: solid #e1e1e1 4px;
+							img{
+								max-height: 250px;
+								max-width: none;
+								width: auto;
+							}
 						}
-					}
-					.entry-title{
-						// position: static;
-						&::after{
-							width:100%;
-							padding-right: 1rem;
-							content: '...';
+						.entry-title{
+							// position: static;
+							&::after{
+								width:100%;
+								padding-right: 1rem;
+								content: '...';
+							}
 						}
-					}
-					.product-price {
-						&::before {
-							
+						.entry-content{
+							display: flex;
+							justify-content: space-between;
+							padding: 15px 10px;
+							margin: 0;
 						}
-					}
-					.entry-content{
-						display: flex;
-						justify-content: space-between;
-						padding: 15px 10px;
-						margin: 0;
 					}
 				}
 			}
 		}
 	}
-}
+
+	.post-type-archive-product{
+		.page-header{
+			width: $site__width;
+			text-align: center;
+			border-bottom: $dashed__border;
+			padding: 1.5rem;
+			margin-bottom: 3rem;
+			.shop-stuff{
+				width: 50%;
+				margin:0 auto;
+				min-width: 500px;
+				.product-type-blocks{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+			}
+		}
+	}
 
 //about.php
 

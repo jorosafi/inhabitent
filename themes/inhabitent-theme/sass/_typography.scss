@@ -250,6 +250,21 @@
 		}
 	}
 
+	.post-type-archive-product{
+		.page-header{
+			.product-type-blocks{
+				p{
+					text-transform: uppercase;
+					font-size: 1.2rem;
+					font-family: $font__headings;
+					&:hover{
+						color: $color__brand-purple;
+					}
+				}
+			}
+		}
+	}
+
 //Adventure Page
 	.adventure{
 		.byline{
