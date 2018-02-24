@@ -451,14 +451,18 @@ a {
 .widget-area h2 {
   font-size: 1.5rem; }
 
-.post-type-archive-product h2 {
+.post-type-archive-product .type-product h2, .post-type-archive-product .type-product h3 {
   font-size: 1rem;
   font-family: "Merriweather", sans-serif;
-  background: none; }
-  .post-type-archive-product h2 a {
-    color: #2f1339; }
+  background: none;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #2f1339;
+  margin: 0;
+  padding: 0; }
 
-.post-type-archive-product p a {
+.post-type-archive-product .type-product p a {
   color: #248A83;
   size: 1.2rem;
   text-transform: uppercase;
@@ -1018,6 +1022,60 @@ object {
               flex-basis: 40%;
           background: none; }
 
+.post-type-archive-product .site-content {
+  width: 1120px;
+  margin: 0 auto; }
+  .post-type-archive-product .site-content .content-area {
+    margin: 0;
+    width: 100%;
+    border: none; }
+    .post-type-archive-product .site-content .content-area .product-list {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .post-type-archive-product .site-content .content-area .product-list .type-product {
+        width: 24%;
+        border: 1px solid #e1e1e1;
+        padding: 0;
+        margin: 5px; }
+        .post-type-archive-product .site-content .content-area .product-list .type-product .entry-header {
+          position: static;
+          overflow: hidden;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border-bottom: solid #e1e1e1 4px; }
+          .post-type-archive-product .site-content .content-area .product-list .type-product .entry-header img {
+            max-height: 250px;
+            max-width: none;
+            width: auto; }
+        .post-type-archive-product .site-content .content-area .product-list .type-product .entry-title::after {
+          width: 100%;
+          padding-right: 1rem;
+          content: '...'; }
+        .post-type-archive-product .site-content .content-area .product-list .type-product .entry-content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding: 15px 10px;
+          margin: 0; }
+
 .page-template-about .site-content {
   width: 100vw; }
   .page-template-about .site-content .content-area .site-main {
@@ -1056,7 +1114,6 @@ object {
   border: none;
   width: 100%; }
 
-/* Front page */
 footer {
   width: 100vw;
   min-width: 1120px;

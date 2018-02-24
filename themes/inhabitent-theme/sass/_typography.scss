@@ -226,21 +226,26 @@
 	}
 
 //Shop Page
-	.post-type-archive-product{
-		h2{
-			font-size: 1rem;
-			font-family: $font__main;
-			background: none;
-			a{
+	.post-type-archive-product{	
+			.type-product{
+			h2, h3{
+				font-size: 1rem;
+				font-family: $font__main;
+				background: none;
+				font-weight: 400;
+				text-transform: capitalize;
+				letter-spacing: normal;
 				color: $color__brand-purple;
+				margin: 0;
+				padding: 0;
 			}
-		}
-		p{
-			a{
-				color: $color__brand-green;
-				size: 1.2rem;
-				text-transform: uppercase;
-				font-family: $font__headings;
+			p{
+				a{
+					color: $color__brand-green;
+					size: 1.2rem;
+					text-transform: uppercase;
+					font-family: $font__headings;
+				}
 			}
 		}
 	}

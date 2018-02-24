@@ -13,28 +13,50 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<h1 class="page-title"> Shop Stuff</h1>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="product-list">
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
 
-			<?php endwhile; ?>
+						<?php if ( 'post' === get_post_type() ) : ?>
+						<div class="entry-meta">
+							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+						</div><!-- .entry-meta -->
+						<?php endif; ?>
+					</header><!-- .entry-header -->
+					</a>
 
-			<?php the_posts_navigation(); ?>
+					<div class="entry-content">
+						<h2 class="entry-title"> <?php echo the_title(); ?> </h2>
 
-		<?php else : ?>
+						<h3 class="product-price"><?php echo CFS () -> get('price'); ?></h3>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+
+					</div><!-- .entry-content -->
+
+				</article><!-- #post-## -->
+
+				<?php endwhile; ?>
+
+				<?php the_posts_navigation(); ?>
+
+				<?php else : ?>
+
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+				<?php endif; ?>
+		
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

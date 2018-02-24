@@ -74,3 +74,17 @@ function about_page_hero() {
 
 add_action( 'wp_enqueue_scripts', 'about_page_hero' );
 
+
+//Change posts per page in Shop
+function product_post_per_page( $query ) {
+
+	if ( is_post_type_archive( 'product' ) ) {
+			$query->set( 'posts_per_page', 16 );
+			$query->set( 'order', 'ASC' );
+           //Set the orderby
+      $query->set( 'orderby', 'title' );
+			return;
+	}
+}
+add_action( 'pre_get_posts', 'product_post_per_page', 1 );
+
