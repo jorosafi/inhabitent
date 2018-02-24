@@ -4,7 +4,7 @@
 
 //layout for home.php, page.php, single.php
 
-	.blog, .page, .single, .page{
+	.blog, .page, .single{
 		.site-content{
 			margin: 0 auto;
 			.content-area{
@@ -13,6 +13,13 @@
 				margin-top: 60px;
 				.site-main{
 					width: 100%;
+					article{
+						.black-btn{
+							&::after{
+								content: "\00a0\2192";
+							}
+						}
+					}
 				}
 			}
 			.widget-area{
@@ -136,31 +143,19 @@
 									width: 100%;
 								}
 							}
-							button{
-								background: none;
-								border: none;
-								box-shadow: none;
-								margin: 0;
-								padding: 0;
+							.black-btn-wrapper{
 								position: absolute;
 								bottom: 13px;
-								.black-btn{
-									display: block;
-									border: 1px solid black;
-									font-family: $font__headings;
-									font-size: 0.9rem;
-									width: 125px;
-									padding: 8px 0px;
-									color: black;
-									text-align: center;
-									flex-basis: 40%;
-									background: none;
-								}
+
 							}
 						}	
 					}
 				}
 			}
+		}
+
+		.home .site-content .content-area{
+			margin-top: 0;
 		}
 
 
@@ -244,6 +239,7 @@
 		.site-content{
 			width: 100vw;
 			.content-area{
+				margin-top: 0;
 				.site-main{
 					width: 100%;
 					margin: 0;
