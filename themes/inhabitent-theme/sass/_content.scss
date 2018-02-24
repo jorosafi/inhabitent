@@ -19,12 +19,16 @@ article{
 	position: relative;
 	.entry-title{
 		position: absolute;
-		bottom: 340px;
+		bottom: 320px;
+		max-width: 75%;
+		padding: 15px;
 	}
 	.entry-meta{
 		position: absolute;
-		bottom: 9px;
-		left: 339px;
+		bottom: 8px;
+		left: 290px;
+		text-align: right;
+		width: 100%;
 	}
 	.wp-post-image{
 		width: 800px;

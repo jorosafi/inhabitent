@@ -4,7 +4,7 @@
 
 //layout for home.php, page.php, single.php
 
-	.blog, .page, .single{
+	.blog, .page, .single, .single-post{
 		.site-content{
 			margin: 0 auto;
 			.content-area{
@@ -14,6 +14,16 @@
 				.site-main{
 					width: 100%;
 					article{
+						width:100%;
+						.entry-footer{
+							background: none;
+							text-transform: uppercase;
+							color: $color__text-main;
+							font-family: $font__headings;
+							.cat-links{
+								margin-right: 20px;
+							}
+						}
 						.black-btn{
 							&::after{
 								content: "\00a0\2192";

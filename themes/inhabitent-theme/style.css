@@ -394,8 +394,6 @@ a {
 .entry-title {
   color: white;
   background: #248A83;
-  max-width: 75%;
-  padding: 7px;
   font-size: 2.1rem; }
   .entry-title a {
     color: white; }
@@ -792,11 +790,15 @@ article {
   position: relative; }
   .entry-header .entry-title {
     position: absolute;
-    bottom: 340px; }
+    bottom: 320px;
+    max-width: 75%;
+    padding: 15px; }
   .entry-header .entry-meta {
     position: absolute;
-    bottom: 9px;
-    left: 339px; }
+    bottom: 8px;
+    left: 290px;
+    text-align: right;
+    width: 100%; }
   .entry-header .wp-post-image {
     width: 800px;
     max-width: 100%; }
@@ -898,17 +900,26 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.blog .site-content, .page .site-content, .single .site-content {
+.blog .site-content, .page .site-content, .single .site-content, .single-post .site-content {
   margin: 0 auto; }
-  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area {
+  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .single-post .site-content .content-area {
     width: 70%;
     border-right: 1px solid #e1e1e1;
     margin-top: 60px; }
-    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main {
+    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .single-post .site-content .content-area .site-main {
       width: 100%; }
-      .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after {
-        content: "\00a0\2192"; }
-  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area {
+      .blog .site-content .content-area .site-main article, .page .site-content .content-area .site-main article, .single .site-content .content-area .site-main article, .single-post .site-content .content-area .site-main article {
+        width: 100%; }
+        .blog .site-content .content-area .site-main article .entry-footer, .page .site-content .content-area .site-main article .entry-footer, .single .site-content .content-area .site-main article .entry-footer, .single-post .site-content .content-area .site-main article .entry-footer {
+          background: none;
+          text-transform: uppercase;
+          color: #404040;
+          font-family: "Novecento", sans-serif; }
+          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links {
+            margin-right: 20px; }
+        .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after {
+          content: "\00a0\2192"; }
+  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .single-post .site-content .widget-area {
     width: 30%;
     margin-top: 60px; }
 

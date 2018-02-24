@@ -14,7 +14,11 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<div class="social-share">
+				<button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i>Like</a></button>
+				<button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i>Tweet</a></button>
+				<button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-pinterest"></i>Pin</a></button>
+			</div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
