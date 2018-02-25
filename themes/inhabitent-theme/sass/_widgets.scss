@@ -2,6 +2,38 @@
 # Widgets
 --------------------------------------------------------------*/
 
+.widget-area{
+	padding: 30px;
+	.textwidget{
+		p{
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			a, code{
+				padding-left: 15px;
+				height: 100%
+			}
+			code{
+				font-family: $font__main;
+			}
+		}
+	}
+	.business_hours_widget-class{
+		p{
+			padding: 8px 0;
+			span{
+				font-weight: bold;
+			}
+		}
+	}
+	.widget_archive{
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
 .widget {
 	// margin: 0 0 $base__space-unit;
 

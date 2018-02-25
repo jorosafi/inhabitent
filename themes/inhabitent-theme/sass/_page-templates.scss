@@ -4,7 +4,7 @@
 
 //layout for home.php, page.php, single.php
 
-	.blog, .page, .single, .single-post{
+	.blog, .page, .single, .single-post, .archive{
 		.site-content{
 			margin: 0 auto;
 			.content-area{
@@ -13,8 +13,18 @@
 				margin-top: 60px;
 				.site-main{
 					width: 100%;
+					.page-header{
+						width: 100%;
+						h1{
+							width: 95%;
+							text-align: left;
+							border-bottom: $solid__border;
+						}
+
+					}
 					article{
 						width:100%;
+						padding-left: 0;
 						.entry-footer{
 							background: none;
 							text-transform: uppercase;
