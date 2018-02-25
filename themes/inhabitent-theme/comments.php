@@ -24,6 +24,8 @@ if ( post_password_required() ) {
 			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
 		</h2>
 
+		
+
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
@@ -63,7 +65,10 @@ if ( post_password_required() ) {
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
+		
 	<?php endif; ?>
+
+
 
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
@@ -71,5 +76,6 @@ if ( post_password_required() ) {
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
 	) ); ?>
+
 
 </div><!-- #comments -->
