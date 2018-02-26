@@ -620,10 +620,11 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  background: #e1e1e1;
+  background: #f4f4f4;
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
+  border: 1px solid #e1e1e1;
   font-family: "Merriweather", sans-serif; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -656,6 +657,9 @@ textarea {
     border-radius: 0px;
     border: 1px solid #e1e1e1;
     background: #f4f4f4; }
+
+.page-id-49 .wpcf7 .required {
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -941,41 +945,41 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.blog .site-content, .page .site-content, .single .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content {
+.blog .site-content, .page .site-content, .single .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content, .search-results .site-content {
   margin: 0 auto; }
-  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area, .error404 .site-content .content-area {
+  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area, .error404 .site-content .content-area, .search-results .site-content .content-area {
     width: 70%;
     border-right: 1px solid #e1e1e1;
     margin-top: 60px; }
-    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .single-post .site-content .content-area .site-main, .archive .site-content .content-area .site-main, .error404 .site-content .content-area .site-main {
+    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .single-post .site-content .content-area .site-main, .archive .site-content .content-area .site-main, .error404 .site-content .content-area .site-main, .search-results .site-content .content-area .site-main {
       width: 100%; }
-      .blog .site-content .content-area .site-main .page-header, .page .site-content .content-area .site-main .page-header, .single .site-content .content-area .site-main .page-header, .single-post .site-content .content-area .site-main .page-header, .archive .site-content .content-area .site-main .page-header, .error404 .site-content .content-area .site-main .page-header {
+      .blog .site-content .content-area .site-main .page-header, .page .site-content .content-area .site-main .page-header, .single .site-content .content-area .site-main .page-header, .single-post .site-content .content-area .site-main .page-header, .archive .site-content .content-area .site-main .page-header, .error404 .site-content .content-area .site-main .page-header, .search-results .site-content .content-area .site-main .page-header {
         width: 100%; }
-        .blog .site-content .content-area .site-main .page-header h1, .page .site-content .content-area .site-main .page-header h1, .single .site-content .content-area .site-main .page-header h1, .single-post .site-content .content-area .site-main .page-header h1, .archive .site-content .content-area .site-main .page-header h1, .error404 .site-content .content-area .site-main .page-header h1 {
+        .blog .site-content .content-area .site-main .page-header h1, .page .site-content .content-area .site-main .page-header h1, .single .site-content .content-area .site-main .page-header h1, .single-post .site-content .content-area .site-main .page-header h1, .archive .site-content .content-area .site-main .page-header h1, .error404 .site-content .content-area .site-main .page-header h1, .search-results .site-content .content-area .site-main .page-header h1 {
           width: 95%;
           text-align: left;
           border-bottom: 1px solid #e1e1e1; }
-      .blog .site-content .content-area .site-main article, .page .site-content .content-area .site-main article, .single .site-content .content-area .site-main article, .single-post .site-content .content-area .site-main article, .archive .site-content .content-area .site-main article, .error404 .site-content .content-area .site-main article {
+      .blog .site-content .content-area .site-main article, .page .site-content .content-area .site-main article, .single .site-content .content-area .site-main article, .single-post .site-content .content-area .site-main article, .archive .site-content .content-area .site-main article, .error404 .site-content .content-area .site-main article, .search-results .site-content .content-area .site-main article {
         width: 100%;
         padding-left: 0; }
-        .blog .site-content .content-area .site-main article .entry-footer, .page .site-content .content-area .site-main article .entry-footer, .single .site-content .content-area .site-main article .entry-footer, .single-post .site-content .content-area .site-main article .entry-footer, .archive .site-content .content-area .site-main article .entry-footer, .error404 .site-content .content-area .site-main article .entry-footer {
+        .blog .site-content .content-area .site-main article .entry-footer, .page .site-content .content-area .site-main article .entry-footer, .single .site-content .content-area .site-main article .entry-footer, .single-post .site-content .content-area .site-main article .entry-footer, .archive .site-content .content-area .site-main article .entry-footer, .error404 .site-content .content-area .site-main article .entry-footer, .search-results .site-content .content-area .site-main article .entry-footer {
           background: none;
           text-transform: uppercase;
           color: #404040;
           font-family: "Novecento", sans-serif; }
-          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links, .error404 .site-content .content-area .site-main article .entry-footer .cat-links {
+          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links, .error404 .site-content .content-area .site-main article .entry-footer .cat-links, .search-results .site-content .content-area .site-main article .entry-footer .cat-links {
             margin-right: 20px; }
-        .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after, .error404 .site-content .content-area .site-main article .black-btn::after {
+        .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after, .error404 .site-content .content-area .site-main article .black-btn::after, .search-results .site-content .content-area .site-main article .black-btn::after {
           content: "\00a0\2192"; }
-      .blog .site-content .content-area .site-main .social-share, .page .site-content .content-area .site-main .social-share, .single .site-content .content-area .site-main .social-share, .single-post .site-content .content-area .site-main .social-share, .archive .site-content .content-area .site-main .social-share, .error404 .site-content .content-area .site-main .social-share {
+      .blog .site-content .content-area .site-main .social-share, .page .site-content .content-area .site-main .social-share, .single .site-content .content-area .site-main .social-share, .single-post .site-content .content-area .site-main .social-share, .archive .site-content .content-area .site-main .social-share, .error404 .site-content .content-area .site-main .social-share, .search-results .site-content .content-area .site-main .social-share {
         width: 100%;
         text-align: left;
         padding: 0 30px; }
-      .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area, .error404 .site-content .content-area .site-main .comments-area {
+      .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area, .error404 .site-content .content-area .site-main .comments-area, .search-results .site-content .content-area .site-main .comments-area {
         width: 100%;
         padding: 30px;
         text-align: left; }
-  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .single-post .site-content .widget-area, .archive .site-content .widget-area, .error404 .site-content .widget-area {
+  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .single-post .site-content .widget-area, .archive .site-content .widget-area, .error404 .site-content .widget-area, .search-results .site-content .widget-area {
     width: 30%;
     margin-top: 60px; }
 
@@ -1231,6 +1235,9 @@ object {
 
 .page-id-49 .site-main {
   margin-top: 0; }
+  .page-id-49 .site-main iframe {
+    width: 100%;
+    height: 400px; }
   .page-id-49 .site-main .entry-title {
     position: static;
     background: none;

@@ -54,10 +54,11 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	background: rgb(225, 225, 225);
+	background: #f4f4f4;
 	color: #666;
 	border: 1px solid #ccc;
-	border-radius: 3px;
+	border-radius: 0;
+	border: $solid__border;
 	font-family: $font__main;
 	&:focus {
 		color: #111;
@@ -97,6 +98,15 @@ textarea {
 					border: $solid__border;
 					background: #f4f4f4;
 				}
+			}
+		}
+	}
+
+//styling for Find Us contact form
+	.page-id-49{
+		.wpcf7{
+			.required{
+				color: $color__brand-orange;
 			}
 		}
 	}
