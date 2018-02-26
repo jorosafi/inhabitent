@@ -79,3 +79,35 @@ article{
 .bypostauthor {
 	display: block;
 }
+
+.depth-1{
+	border-bottom: $solid__border;
+}
+
+.comments-area{
+	.comment-list{
+		margin: 0;
+		padding: 0;
+			.comment-body{
+				display: flex;
+				.comment-author-avatar{
+					padding-right: 30px;
+					img {
+						border-radius: 50%;
+					}
+				}
+				.comment-content{
+					.comment-author{
+						text-transform: capitalize;
+						font-weight: bold;
+					}
+					.comment-metadata{
+						color: $color__brand-light-grey
+					}
+				}
+			}
+			.children{
+				border-top: $solid__border;
+			}
+	}
+}

@@ -81,7 +81,6 @@ function product_post_per_page( $query ) {
 	if ( is_post_type_archive( 'product' ) ) {
 			$query->set( 'posts_per_page', 16 );
 			$query->set( 'order', 'ASC' );
-           //Set the orderby
       $query->set( 'orderby', 'title' );
 			return;
 	}

@@ -882,6 +882,28 @@ article {
 .bypostauthor {
   display: block; }
 
+.depth-1 {
+  border-bottom: 1px solid #e1e1e1; }
+
+.comments-area .comment-list {
+  margin: 0;
+  padding: 0; }
+  .comments-area .comment-list .comment-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .comments-area .comment-list .comment-body .comment-author-avatar {
+      padding-right: 30px; }
+      .comments-area .comment-list .comment-body .comment-author-avatar img {
+        border-radius: 50%; }
+    .comments-area .comment-list .comment-body .comment-content .comment-author {
+      text-transform: capitalize;
+      font-weight: bold; }
+    .comments-area .comment-list .comment-body .comment-content .comment-metadata {
+      color: #a1a1a1; }
+  .comments-area .comment-list .children {
+    border-top: 1px solid #e1e1e1; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
