@@ -10,45 +10,96 @@
 	position: fixed;
 	background: rgba(255, 255, 255, 0.8);
 	z-index: 100;
-	.nav-container{
+}
+
+.nav-container{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	width: $site__width;
+	margin: 0 auto;
+	align-items: center;
+	height: 100%;
+}
+
+.site-branding{
+	.nav-logo{
+		background:url("../../images/logo/inhabitent-logo-tent.svg"),;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.main-navigation{
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	ul{
 		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0;
+		padding: 0;
+		li{
+			padding: 15px;
+		}
+	}
+	.nav-search{
+		display: flex;
+		justify-content: space-around;
 		align-content: center;
-		justify-content: space-between;
-		width: $site__width;
-		margin: 0 auto;
-		align-items: center;
-		height: 100%;
-		.site-branding{
-			flex-basis: 45%;
-			.nav-logo{
-				background:url("../../images/logo/inhabitent-logo-tent.svg"),;
-				background-size: contain;
-				background-repeat: no-repeat;
-				width: 50px;
-				height: 50px;
+		button{
+			background: none;
+			border: none;
+			color: $color__brand-green;
+			&:hover{
+				cursor: pointer;
+			}
+			&:focus{
+				outline: none;
 			}
 		}
-		.main-navigation{
-			flex-basis: 45%;
-			height: 100%;
-			ul{
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				li{
-					padding: 15px;
+		.search-form{
+			display: none;
+			animation: show 1s;
+			overflow: hidden;
+			fieldset{
+				border: none;
+				height: 100%;
+				padding: 0;
+				label{
+					height: 100%;
+					display: inline-block;
+					input{
+						background: none;
+						border: none;
+						height: 100%;
+						padding: 0;
+						&::placeholder{
+							text-transform: uppercase;
+							font-family: $font__headings;
+						}
+						&:focus{
+							outline: none;
+						}
+					}
 				}
 			}
-		}
-		.search-icon{
-			flex-basis: 10%;
-			color: $color__brand-green;
 		}
 	}
 }
 
-
-
+@keyframes show {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 
 //custom nav bar for home page and about page
@@ -69,10 +120,14 @@
 				}
 			}
 			.main-navigation{
-
-			}
-			.search-icon{
-				color: white;
+				.search-button{
+					color: white;
+				}
+				.search-form{
+					input::placeholder{
+						color: $color__brand-yellow;
+					}
+				}
 			}
 		}
 	}

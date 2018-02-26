@@ -672,50 +672,114 @@ textarea {
   position: fixed;
   background: rgba(255, 255, 255, 0.8);
   z-index: 100; }
-  .site-header .nav-container {
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
+
+.site-branding .nav-logo {
+  background: url("../../images/logo/inhabitent-logo-tent.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.main-navigation {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .main-navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+    padding: 0; }
+    .main-navigation ul li {
+      padding: 15px; }
+  .main-navigation .nav-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 1120px;
-    margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%; }
-    .site-header .nav-container .site-branding {
-      -ms-flex-preferred-size: 45%;
-          flex-basis: 45%; }
-      .site-header .nav-container .site-branding .nav-logo {
-        background: url("../../images/logo/inhabitent-logo-tent.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 50px; }
-    .site-header .nav-container .main-navigation {
-      -ms-flex-preferred-size: 45%;
-          flex-basis: 45%;
-      height: 100%; }
-      .site-header .nav-container .main-navigation ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-        .site-header .nav-container .main-navigation ul li {
-          padding: 15px; }
-    .site-header .nav-container .search-icon {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%;
+        align-content: center; }
+    .main-navigation .nav-search button {
+      background: none;
+      border: none;
       color: #248A83; }
+      .main-navigation .nav-search button:hover {
+        cursor: pointer; }
+      .main-navigation .nav-search button:focus {
+        outline: none; }
+    .main-navigation .nav-search .search-form {
+      display: none;
+      -webkit-animation: show 1s;
+              animation: show 1s;
+      overflow: hidden; }
+      .main-navigation .nav-search .search-form fieldset {
+        border: none;
+        height: 100%;
+        padding: 0; }
+        .main-navigation .nav-search .search-form fieldset label {
+          height: 100%;
+          display: inline-block; }
+          .main-navigation .nav-search .search-form fieldset label input {
+            background: none;
+            border: none;
+            height: 100%;
+            padding: 0; }
+            .main-navigation .nav-search .search-form fieldset label input::-webkit-input-placeholder {
+              text-transform: uppercase;
+              font-family: "Novecento", sans-serif; }
+            .main-navigation .nav-search .search-form fieldset label input:-ms-input-placeholder {
+              text-transform: uppercase;
+              font-family: "Novecento", sans-serif; }
+            .main-navigation .nav-search .search-form fieldset label input::-ms-input-placeholder {
+              text-transform: uppercase;
+              font-family: "Novecento", sans-serif; }
+            .main-navigation .nav-search .search-form fieldset label input::placeholder {
+              text-transform: uppercase;
+              font-family: "Novecento", sans-serif; }
+            .main-navigation .nav-search .search-form fieldset label input:focus {
+              outline: none; }
+
+@-webkit-keyframes show {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes show {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
 
 .page-template-about .site-header, .home .site-header {
   background: none;
@@ -727,8 +791,16 @@ textarea {
     background-repeat: no-repeat;
     width: 50px;
     height: 50px; }
-  .page-template-about .site-header .nav-container .search-icon, .home .site-header .nav-container .search-icon {
+  .page-template-about .site-header .nav-container .main-navigation .search-button, .home .site-header .nav-container .main-navigation .search-button {
     color: white; }
+  .page-template-about .site-header .nav-container .main-navigation .search-form input::-webkit-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .page-template-about .site-header .nav-container .main-navigation .search-form input:-ms-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .page-template-about .site-header .nav-container .main-navigation .search-form input::-ms-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input::-ms-input-placeholder {
+    color: #f0e4d1; }
+  .page-template-about .site-header .nav-container .main-navigation .search-form input::placeholder, .home .site-header .nav-container .main-navigation .search-form input::placeholder {
+    color: #f0e4d1; }
 
 /* Menus */
 ul {
@@ -845,7 +917,7 @@ article {
   position: relative; }
   .entry-header .entry-title {
     position: absolute;
-    bottom: 320px;
+    top: 30px;
     max-width: 75%;
     padding: 15px; }
   .entry-header .entry-meta {
