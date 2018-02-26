@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-//layout for home.php, page.php, single.php and archive.php
+//layout for home.php, page.php, single.php, search and archive.php
 
 	.blog, .page, .single, .single-post, .archive, .error404, .search-results{
 		.site-content{
@@ -400,6 +400,13 @@
 							a{
 								color: $color__brand-green;
 							}
+						}
+						.entry-meta{
+							background: none;
+							position: static;
+							color: $color__text-main;
+							text-align: left;
+							padding: 20px 0;
 						}
 						.entry-summary{
 							p{

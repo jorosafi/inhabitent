@@ -1372,6 +1372,12 @@ object {
     padding: 0; }
     .search-results .site-content .content-area .site-main article .entry-title a {
       color: #248A83; }
+  .search-results .site-content .content-area .site-main article .entry-meta {
+    background: none;
+    position: static;
+    color: #404040;
+    text-align: left;
+    padding: 20px 0; }
   .search-results .site-content .content-area .site-main article .entry-summary p {
     padding: 0; }
   .search-results .site-content .content-area .site-main article .entry-summary .black-btn-wrapper {
