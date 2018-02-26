@@ -10,51 +10,74 @@
 	position: fixed;
 	background: rgba(255, 255, 255, 0.8);
 	z-index: 100;
+	.nav-container{
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		width: $site__width;
+		margin: 0 auto;
+		align-items: center;
+		height: 100%;
+		.site-branding{
+			flex-basis: 45%;
+			.nav-logo{
+				background:url("../../images/logo/inhabitent-logo-tent.svg"),;
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 50px;
+				height: 50px;
+			}
+		}
+		.main-navigation{
+			flex-basis: 45%;
+			height: 100%;
+			ul{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				li{
+					padding: 15px;
+				}
+			}
+		}
+		.search-icon{
+			flex-basis: 10%;
+			color: $color__brand-green;
+		}
+	}
 }
 
-.nav-container{
-	display: flex;
-	align-content: center;
-	justify-content: space-between;
-	width: $site__width;
-	margin: 0 auto;
-	align-items: center;
-}
 
-.nav-logo{
-	background:url("../../images/logo/inhabitent-logo-tent.svg"),;
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-}
+
+
 
 //custom nav bar for home page and about page
+
 .page-template-about, .home{
 	.site-header{
 		background: none;
 		border: none;
 		position: absolute;
+		.nav-container{
+			.site-branding{
+				.nav-logo{
+					background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
+					background-size: contain;
+					background-repeat: no-repeat;
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.main-navigation{
+
+			}
+			.search-icon{
+				color: white;
+			}
+		}
 	}
 }
 
-.home .nav-logo, .page-template-about .nav-logo
-{
-	background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-}
-
-.main-navigation ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	li{
-		padding: 15px;
-	}
-}
 
 /* Menus */
 ul {

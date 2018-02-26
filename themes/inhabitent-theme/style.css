@@ -672,53 +672,63 @@ textarea {
   position: fixed;
   background: rgba(255, 255, 255, 0.8);
   z-index: 100; }
-
-.nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1120px;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.nav-logo {
-  background: url("../../images/logo/inhabitent-logo-tent.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px; }
+  .site-header .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+    .site-header .nav-container .site-branding {
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%; }
+      .site-header .nav-container .site-branding .nav-logo {
+        background: url("../../images/logo/inhabitent-logo-tent.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px; }
+    .site-header .nav-container .main-navigation {
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+      height: 100%; }
+      .site-header .nav-container .main-navigation ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .site-header .nav-container .main-navigation ul li {
+          padding: 15px; }
+    .site-header .nav-container .search-icon {
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+      color: #248A83; }
 
 .page-template-about .site-header, .home .site-header {
   background: none;
   border: none;
   position: absolute; }
-
-.home .nav-logo, .page-template-about .nav-logo {
-  background: url("../../images/logo/inhabitent-logo-tent-white.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px; }
-
-.main-navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .main-navigation ul li {
-    padding: 15px; }
+  .page-template-about .site-header .nav-container .site-branding .nav-logo, .home .site-header .nav-container .site-branding .nav-logo {
+    background: url("../../images/logo/inhabitent-logo-tent-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px; }
+  .page-template-about .site-header .nav-container .search-icon, .home .site-header .nav-container .search-icon {
+    color: white; }
 
 /* Menus */
 ul {
