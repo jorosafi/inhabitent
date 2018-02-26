@@ -85,3 +85,18 @@ textarea {
 			font-size: 1.1rem;
 		}
 	}
+
+// styling for 404 search bar
+	.error404{
+		.search-form{
+			fieldset{
+				border: none;
+				padding-left: 0;
+				input{
+					border-radius: 0px;
+					border: $solid__border;
+					background: #f4f4f4;
+				}
+			}
+		}
+	}

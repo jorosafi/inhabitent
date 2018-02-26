@@ -2,9 +2,9 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-//layout for home.php, page.php, single.php
+//layout for home.php, page.php, single.php and archive.php
 
-	.blog, .page, .single, .single-post, .archive{
+	.blog, .page, .single, .single-post, .archive, .error404{
 		.site-content{
 			margin: 0 auto;
 			.content-area{
@@ -243,6 +243,24 @@
 		}
 	}
 
+	//this is to override .page-title styling for regular archive page
+	.post-type-archive-product{
+		.site{
+			.site-content{
+				.content-area{
+					.site-main{
+						.page-header{
+							.page-title{
+								text-align: center;
+								border-bottom: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.post-type-archive-product{
 		.page-header{
 			width: $site__width;
@@ -266,26 +284,29 @@
 //about.php
 
 	.page-template-about{
-		.site-content{
-			width: 100vw;
-			.content-area{
-				margin-top: 0;
-				.site-main{
+		.site{
+			.site-content{
+				width: 100vw;
+				.content-area{
+					margin-top: 0;
 					width: 100%;
-					margin: 0;
-					article{
-						padding: 0;
-						.entry-header{
-							height: 100vh;
-							display: flex;
-							justify-content: center;
-							align-items: center;	
-						}
-						.entry-content{
-							width: 800px;;
-							margin: 3rem auto;
-							h2{
-								text-align: center;
+					.site-main{
+						width: 100%;
+						margin: 0;
+						article{
+							padding: 0;
+							.entry-header{
+								height: 100vh;
+								display: flex;
+								justify-content: center;
+								align-items: center;	
+							}
+							.entry-content{
+								width: 800px;;
+								margin: 3rem auto;
+								h2{
+									text-align: center;
+								}
 							}
 						}
 					}
@@ -308,6 +329,55 @@
 	.page-template-about .content-area{
 		border: none; 
 		width: 100%;
+	}
+
+
+//Special layout changes for Find Us page
+.page-id-49{
+	.site-main{
+		margin-top: 0;
+		.entry-title{
+			position: static;
+			background: none;
+			color: $color__brand-purple;
+			padding: 0;
+			font-size: 2.4rem;
+		}
+	}
+}
+
+// 404
+
+	.error404{
+		.site-content{
+			.content-area{
+				.site-main{
+					.error-404{
+						.page-header{
+							.page-title{
+								border: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.error404{
+		.site-main{
+			margin-bottom: 80px;
+			.widget{
+				margin: 50px 0;
+				ul{
+					margin: 0;
+					padding: 0;
+					li{
+						padding: 2px 0;
+					}
+				}
+			}
+		}	
 	}
 
 

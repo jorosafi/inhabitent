@@ -512,6 +512,10 @@ a {
         flex-basis: 40%;
     background: none; }
 
+.error404 .error-404 .widgettitle {
+  font-size: 1.5rem;
+  color: #2f1339; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -644,6 +648,14 @@ textarea {
   font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   font-size: 1.1rem; }
+
+.error404 .search-form fieldset {
+  border: none;
+  padding-left: 0; }
+  .error404 .search-form fieldset input {
+    border-radius: 0px;
+    border: 1px solid #e1e1e1;
+    background: #f4f4f4; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -929,41 +941,41 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.blog .site-content, .page .site-content, .single .site-content, .single-post .site-content, .archive .site-content {
+.blog .site-content, .page .site-content, .single .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content {
   margin: 0 auto; }
-  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area {
+  .blog .site-content .content-area, .page .site-content .content-area, .single .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area, .error404 .site-content .content-area {
     width: 70%;
     border-right: 1px solid #e1e1e1;
     margin-top: 60px; }
-    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .single-post .site-content .content-area .site-main, .archive .site-content .content-area .site-main {
+    .blog .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single .site-content .content-area .site-main, .single-post .site-content .content-area .site-main, .archive .site-content .content-area .site-main, .error404 .site-content .content-area .site-main {
       width: 100%; }
-      .blog .site-content .content-area .site-main .page-header, .page .site-content .content-area .site-main .page-header, .single .site-content .content-area .site-main .page-header, .single-post .site-content .content-area .site-main .page-header, .archive .site-content .content-area .site-main .page-header {
+      .blog .site-content .content-area .site-main .page-header, .page .site-content .content-area .site-main .page-header, .single .site-content .content-area .site-main .page-header, .single-post .site-content .content-area .site-main .page-header, .archive .site-content .content-area .site-main .page-header, .error404 .site-content .content-area .site-main .page-header {
         width: 100%; }
-        .blog .site-content .content-area .site-main .page-header h1, .page .site-content .content-area .site-main .page-header h1, .single .site-content .content-area .site-main .page-header h1, .single-post .site-content .content-area .site-main .page-header h1, .archive .site-content .content-area .site-main .page-header h1 {
+        .blog .site-content .content-area .site-main .page-header h1, .page .site-content .content-area .site-main .page-header h1, .single .site-content .content-area .site-main .page-header h1, .single-post .site-content .content-area .site-main .page-header h1, .archive .site-content .content-area .site-main .page-header h1, .error404 .site-content .content-area .site-main .page-header h1 {
           width: 95%;
           text-align: left;
           border-bottom: 1px solid #e1e1e1; }
-      .blog .site-content .content-area .site-main article, .page .site-content .content-area .site-main article, .single .site-content .content-area .site-main article, .single-post .site-content .content-area .site-main article, .archive .site-content .content-area .site-main article {
+      .blog .site-content .content-area .site-main article, .page .site-content .content-area .site-main article, .single .site-content .content-area .site-main article, .single-post .site-content .content-area .site-main article, .archive .site-content .content-area .site-main article, .error404 .site-content .content-area .site-main article {
         width: 100%;
         padding-left: 0; }
-        .blog .site-content .content-area .site-main article .entry-footer, .page .site-content .content-area .site-main article .entry-footer, .single .site-content .content-area .site-main article .entry-footer, .single-post .site-content .content-area .site-main article .entry-footer, .archive .site-content .content-area .site-main article .entry-footer {
+        .blog .site-content .content-area .site-main article .entry-footer, .page .site-content .content-area .site-main article .entry-footer, .single .site-content .content-area .site-main article .entry-footer, .single-post .site-content .content-area .site-main article .entry-footer, .archive .site-content .content-area .site-main article .entry-footer, .error404 .site-content .content-area .site-main article .entry-footer {
           background: none;
           text-transform: uppercase;
           color: #404040;
           font-family: "Novecento", sans-serif; }
-          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links {
+          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links, .error404 .site-content .content-area .site-main article .entry-footer .cat-links {
             margin-right: 20px; }
-        .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after {
+        .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after, .error404 .site-content .content-area .site-main article .black-btn::after {
           content: "\00a0\2192"; }
-      .blog .site-content .content-area .site-main .social-share, .page .site-content .content-area .site-main .social-share, .single .site-content .content-area .site-main .social-share, .single-post .site-content .content-area .site-main .social-share, .archive .site-content .content-area .site-main .social-share {
+      .blog .site-content .content-area .site-main .social-share, .page .site-content .content-area .site-main .social-share, .single .site-content .content-area .site-main .social-share, .single-post .site-content .content-area .site-main .social-share, .archive .site-content .content-area .site-main .social-share, .error404 .site-content .content-area .site-main .social-share {
         width: 100%;
         text-align: left;
         padding: 0 30px; }
-      .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area {
+      .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area, .error404 .site-content .content-area .site-main .comments-area {
         width: 100%;
         padding: 30px;
         text-align: left; }
-  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .single-post .site-content .widget-area, .archive .site-content .widget-area {
+  .blog .site-content .widget-area, .page .site-content .widget-area, .single .site-content .widget-area, .single-post .site-content .widget-area, .archive .site-content .widget-area, .error404 .site-content .widget-area {
     width: 30%;
     margin-top: 60px; }
 
@@ -1150,6 +1162,10 @@ object {
           padding: 15px 10px;
           margin: 0; }
 
+.post-type-archive-product .site .site-content .content-area .site-main .page-header .page-title {
+  text-align: center;
+  border-bottom: none; }
+
 .post-type-archive-product .page-header {
   width: 1120px;
   text-align: center;
@@ -1172,16 +1188,17 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between; }
 
-.page-template-about .site-content {
+.page-template-about .site .site-content {
   width: 100vw; }
-  .page-template-about .site-content .content-area {
-    margin-top: 0; }
-    .page-template-about .site-content .content-area .site-main {
+  .page-template-about .site .site-content .content-area {
+    margin-top: 0;
+    width: 100%; }
+    .page-template-about .site .site-content .content-area .site-main {
       width: 100%;
       margin: 0; }
-      .page-template-about .site-content .content-area .site-main article {
+      .page-template-about .site .site-content .content-area .site-main article {
         padding: 0; }
-        .page-template-about .site-content .content-area .site-main article .entry-header {
+        .page-template-about .site .site-content .content-area .site-main article .entry-header {
           height: 100vh;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1192,10 +1209,10 @@ object {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
-        .page-template-about .site-content .content-area .site-main article .entry-content {
+        .page-template-about .site .site-content .content-area .site-main article .entry-content {
           width: 800px;
           margin: 3rem auto; }
-          .page-template-about .site-content .content-area .site-main article .entry-content h2 {
+          .page-template-about .site .site-content .content-area .site-main article .entry-content h2 {
             text-align: center; }
 
 .page-template-about .entry-header {
@@ -1211,6 +1228,28 @@ object {
 .page-template-about .content-area {
   border: none;
   width: 100%; }
+
+.page-id-49 .site-main {
+  margin-top: 0; }
+  .page-id-49 .site-main .entry-title {
+    position: static;
+    background: none;
+    color: #2f1339;
+    padding: 0;
+    font-size: 2.4rem; }
+
+.error404 .site-content .content-area .site-main .error-404 .page-header .page-title {
+  border: none; }
+
+.error404 .site-main {
+  margin-bottom: 80px; }
+  .error404 .site-main .widget {
+    margin: 50px 0; }
+    .error404 .site-main .widget ul {
+      margin: 0;
+      padding: 0; }
+      .error404 .site-main .widget ul li {
+        padding: 2px 0; }
 
 footer {
   width: 100vw;
