@@ -35,7 +35,7 @@ The layout for the regular blog posts, which are called Journal on the website, 
 The product pages are a custom post type generated using the GenerateWP web tool (https://generatewp.com/post-type/). The layout for these pages is built in the single-product.php template file. 
 
 These pages also have their own taxonomy, which was also built using GenerateWP (https://generatewp.com/taxonomy/). This custom taxonomy is used to classify the products into sections and display them on the front page and product archive. 
-![Home Page Screenshot](images/screenshots/product-archive.png)
+![Home Page Screenshot](themes/inhabitent-theme/images/screenshots/product-archive.png)
 
 ### Adventure posts
 ![Home Page Screenshot](themes/inhabitent-theme/images/screenshots/adventure.png)
