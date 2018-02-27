@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Single-product.php
+	.single-product{
+		.site-content{
+			.content-area{
+				width: $site__width;
+				max-width: none;
+				border: none;
+				article{
+					padding: 0;
+					display: grid;
+					grid-template-columns: 560px 560px;
+					grid-template-areas: "image content";
+					.entry-header{
+						grid-area: image;
+						position: static;
+						display: inline-block;
+						padding: 0 10px;
+						img{
+
+						}
+					}
+					.entry-content{
+						grid-area: content;
+						display: inline-block;
+						padding: 0 10px;
+						margin: 0;
+						.entry-title{
+							background: none;
+							color: $color__brand-orange;
+							margin-top: 0;
+						}
+						.product-price{
+							margin: 20px 0;
+						}
+						.social-share{
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+

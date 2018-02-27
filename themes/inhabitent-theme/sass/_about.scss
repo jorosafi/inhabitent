@@ -1,0 +1,49 @@
+//about.php
+
+.page-template-about{
+  .site{
+    .site-content{
+      width: 100vw;
+      .content-area{
+        margin-top: 0;
+        width: 100%;
+        .site-main{
+          width: 100%;
+          margin: 0;
+          article{
+            padding: 0;
+            .entry-header{
+              height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;	
+            }
+            .entry-content{
+              width: 800px;;
+              margin: 3rem auto;
+              h2{
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-template-about .entry-header{
+  position: static;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.page-template-about .entry-title{
+  position: static;
+  background: none;
+}
+
+.page-template-about .content-area{
+  border: none; 
+  width: 100%;
+}

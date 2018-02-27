@@ -18,14 +18,10 @@ get_header(); ?>
           <?php the_post_thumbnail( 'large' ); ?>
         <?php endif; ?>
 
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-        <div class="entry-meta">
-          <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-        </div><!-- .entry-meta -->
       </header><!-- .entry-header -->
 
       <div class="entry-content">
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         <h3 class="product-price"><?php echo CFS () -> get('price'); ?></h3>
         <?php the_content(); ?>
         <?php
@@ -34,6 +30,11 @@ get_header(); ?>
             'after'  => '</div>',
           ) );
         ?>
+        <div class="social-share">
+				  <button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i>Like</a></button>
+				  <button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i>Tweet</a></button>
+				  <button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-pinterest"></i>Pin</a></button>
+			  </div>  
       </div><!-- .entry-content -->
 
       <footer class="entry-footer">
@@ -41,19 +42,10 @@ get_header(); ?>
       </footer><!-- .entry-footer -->
     </article><!-- #post-## -->
 
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -1,0 +1,226 @@
+//front-page.php
+
+	//custom page layout for front page content
+  .home {
+    .site-content{
+      width: 100vw;
+      .content-area{
+        border: none;
+        margin-top: none;
+        width: 100%;
+        .site-main{
+          margin: 0 auto;
+          .home-hero{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url("../../images/home-hero.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+//layout for Shop Stuff section
+  .home{
+    .shop-stuff{
+      width: $site__width;
+      .product-type-blocks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .product-type-block-wrapper{
+          border: $solid__border;
+          border-top: 5px solid #e1e1e1;
+          max-width: 23%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+          text-align: center;
+          &:hover{
+            border-color: $color__brand-orange;
+          }
+          img{
+            height: 80px;
+          }
+          .btn{
+            display: block;
+            background: $color__brand-green;
+            color: white;
+            width: 135px;
+            padding: 12px 0;
+            text-transform: uppercase;
+            margin: none;
+            &:hover{
+              background: darken($color__brand-green, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+//layout for journal section in front page
+  .home{
+    .inhabitent-journal{
+      width: $site__width;
+      ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        li{
+          border: $solid__border;
+          margin-bottom: 12px;
+          width: 32%;
+          .img{
+            height: 250px;
+          }
+          .entry-meta{
+            background: none;
+            max-width: 100%;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            div{
+              flex-basis: 20%;	
+            }
+            .entry-title{
+              position: static;
+              background: none;
+              margin: 0;
+              max-width: 100%;
+              text-align: left;
+              padding: 7px 0 18px 0px;
+              width:100%;
+              flex-basis: 40%;
+              a{
+                color: $color__brand-green;
+                width: 100%;
+              }
+            }
+            .black-btn-wrapper{
+              position: absolute;
+              bottom: 13px;
+
+            }
+          }	
+        }
+      }
+    }
+  }
+
+  .home .site-content .content-area{
+    margin-top: 0;
+  }
+
+  //layout for Adventures section
+  .home{
+    .adventure-posts{
+      width: $site__width;
+      margin-bottom: 50px;
+      ul{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 560px 280px 280px;
+        grid-template-rows: 280px 280px;
+        grid-template-areas: "big medium medium"
+                              "big small1 small2";
+        li{
+          position: relative;
+          padding: 10px;
+          .thumbnail-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img{
+              width: auto;
+              min-height: 100%;
+              max-width: none;
+              filter: brightness(60%)
+            }
+          }
+          .entry-meta{
+            position: absolute;
+            top: 20px;
+            background: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            .entry-title{
+              background: none;
+              width: 80%;
+              text-align: left;
+              font-family: $font__main;
+              margin: 20px 0;
+              a{
+                width: 100%;
+                color: white;
+                &:hover{
+                  color: $color__brand-yellow;
+                }
+              }
+            }
+            .black-btn-wrapper{
+              .black-btn{
+                color: white;
+                border: 1px solid white;
+                &:hover{
+                  background: $color__brand-green;
+                  border: none;
+                }
+              }
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+        li:first-child{
+          grid-area: big;
+          padding-left: 0;
+          .entry-title{
+            font-size: 3rem;
+          }
+        }
+        li:nth-child(2){
+          grid-area: medium;
+          padding-right: 0;
+          .entry-title{
+            font-size: 2.4rem;
+          }
+        }
+        li:nth-child(3){
+          grid-area: small1;
+          padding-right: 0;
+          .entry-title{
+            font-size: 1.6rem;
+          }
+        }
+        li:nth-child(4){
+          grid-area: small2;
+          padding-right: 0;
+          .entry-title{
+            font-size: 1.6rem;
+          }
+        }
+      }	
+    }
+  }

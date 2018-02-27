@@ -1,0 +1,91 @@
+//archive-product.php
+
+.post-type-archive-product{
+  .site-content{
+    width: $site__width;
+    margin: 0 auto;
+    .content-area{
+      margin: 0;
+      width: 100%;
+      border: none;
+      .product-list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        .type-product{
+          width: 24%;
+          border: $solid__border;
+          padding: 0;
+          margin: 5px;
+          .entry-header{
+            position: static;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: solid #e1e1e1 4px;
+            img{
+              max-height: 250px;
+              max-width: none;
+              width: auto;
+            }
+          }
+          .entry-title{
+            // position: static;
+            &::after{
+              width:100%;
+              padding-right: 1rem;
+              content: '...';
+            }
+          }
+          .entry-content{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//this is to override .page-title styling for regular archive page
+.post-type-archive-product{
+  .site{
+    .site-content{
+      .content-area{
+        .site-main{
+          .page-header{
+            .page-title{
+              text-align: center;
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.post-type-archive-product{
+  .page-header{
+    width: $site__width;
+    text-align: center;
+    border-bottom: $dashed__border;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    .shop-stuff{
+      width: 50%;
+      margin:0 auto;
+      min-width: 500px;
+      .product-type-blocks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
