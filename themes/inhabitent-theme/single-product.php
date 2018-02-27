@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single product posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -30,6 +30,7 @@ get_header(); ?>
             'after'  => '</div>',
           ) );
         ?>
+
         <div class="social-share">
 				  <button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i>Like</a></button>
 				  <button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i>Tweet</a></button>

@@ -1,8 +1,8 @@
 <?php
 /**
- * The main template file.
+ * The main archive template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

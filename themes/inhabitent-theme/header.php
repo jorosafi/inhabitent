@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?><!DOCTYPE html>
@@ -26,19 +26,21 @@
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> 	
 							<div class="nav-logo">
-							<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo/inhabitent-logo-tent-white.svg" alt="<?php bloginfo( 'name' ); ?>"> -->
+							<!-- using backgrounf image for logo-->
 							</div>
 						</a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+						
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						
+						<!-- search button -->
 						<div class="nav-search">
 							<button class="search-button"><i class="fas fa-search"></i></button>
 							<?php get_search_form(); ?>
 						</div>
+
 					</nav><!-- #site-navigation -->
 
 					

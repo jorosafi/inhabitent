@@ -2,7 +2,7 @@
 /**
  * The front page for the theme.
  *
- * @package Inhabitent-Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -14,7 +14,8 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo/inhabitent-logo-full.svg" alt="">
 			</div>
 
-			<div class="shop-stuff">
+			<!-- custom taxonomy for Shop Stuff -->
+			<div class="shop-stuff"> 
 				<h2>Shop Stuff</h2>
 				<?php
 				$terms = get_terms(array(
@@ -39,6 +40,7 @@ get_header(); ?>
 				<?php endif; ?>
 			</div><!-- Shop Stuff  -->
 
+			<!-- insert Journal entries -->
 			<div class="inhabitent-journal">
 				<?php
 				// The Query
@@ -75,6 +77,7 @@ get_header(); ?>
 				<?php endif?>
 			</div> <!-- Inhabitent Journal -->
 
+			<!-- insert adventure posts -->
 			<div class="adventure-posts">
 				<?php
 				// The Query

@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying the product archive page.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -63,6 +63,7 @@ get_header(); ?>
 					<div class="entry-content">
 						<h2 class="entry-title"> <?php echo the_title(); ?> </h2>
 
+						<!-- this inserts price into the apge using the CFS plugin -->
 						<h3 class="product-price"><?php echo CFS () -> get('price'); ?></h3>
 
 
