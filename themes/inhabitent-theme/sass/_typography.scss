@@ -121,13 +121,15 @@
 	}
 
 	// nav bar for home, about and adventure pages
-	.home, .page-template-about{
-		.menu-item{
-				a{
-				color: white;
-				text-shadow: 1px 1px 2px #323232;
-				&:hover{
-				color: $color__brand-orange;
+	.home, .page-template-about, .single-adventure_post_type{
+		.site-header-special{
+			.menu-item{
+					a{
+					color: white;
+					text-shadow: 1px 1px 2px #323232;
+					&:hover{
+					color: $color__brand-orange;
+					}
 				}
 			}
 		}

@@ -385,10 +385,10 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-.home .menu-item a, .page-template-about .menu-item a {
+.home .site-header-special .menu-item a, .page-template-about .site-header-special .menu-item a, .single-adventure_post_type .site-header-special .menu-item a {
   color: white;
   text-shadow: 1px 1px 2px #323232; }
-  .home .menu-item a:hover, .page-template-about .menu-item a:hover {
+  .home .site-header-special .menu-item a:hover, .page-template-about .site-header-special .menu-item a:hover, .single-adventure_post_type .site-header-special .menu-item a:hover {
     color: #d99054; }
 
 .entry-title {
@@ -781,25 +781,25 @@ textarea {
   100% {
     width: 100%; } }
 
-.page-template-about .site-header, .home .site-header {
+.page-template-about .site-header-special, .home .site-header-special, .single-adventure_post_type .site-header-special {
   background: none;
   border: none;
   position: absolute; }
-  .page-template-about .site-header .nav-container .site-branding .nav-logo, .home .site-header .nav-container .site-branding .nav-logo {
+  .page-template-about .site-header-special .nav-container .site-branding .nav-logo, .home .site-header-special .nav-container .site-branding .nav-logo, .single-adventure_post_type .site-header-special .nav-container .site-branding .nav-logo {
     background: url("../../images/logo/inhabitent-logo-tent-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
     height: 50px; }
-  .page-template-about .site-header .nav-container .main-navigation .search-button, .home .site-header .nav-container .main-navigation .search-button {
+  .page-template-about .site-header-special .nav-container .main-navigation .search-button, .home .site-header-special .nav-container .main-navigation .search-button, .single-adventure_post_type .site-header-special .nav-container .main-navigation .search-button {
     color: white; }
-  .page-template-about .site-header .nav-container .main-navigation .search-form input::-webkit-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input::-webkit-input-placeholder {
+  .page-template-about .site-header-special .nav-container .main-navigation .search-form input::-webkit-input-placeholder, .home .site-header-special .nav-container .main-navigation .search-form input::-webkit-input-placeholder, .single-adventure_post_type .site-header-special .nav-container .main-navigation .search-form input::-webkit-input-placeholder {
     color: #f0e4d1; }
-  .page-template-about .site-header .nav-container .main-navigation .search-form input:-ms-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input:-ms-input-placeholder {
+  .page-template-about .site-header-special .nav-container .main-navigation .search-form input:-ms-input-placeholder, .home .site-header-special .nav-container .main-navigation .search-form input:-ms-input-placeholder, .single-adventure_post_type .site-header-special .nav-container .main-navigation .search-form input:-ms-input-placeholder {
     color: #f0e4d1; }
-  .page-template-about .site-header .nav-container .main-navigation .search-form input::-ms-input-placeholder, .home .site-header .nav-container .main-navigation .search-form input::-ms-input-placeholder {
+  .page-template-about .site-header-special .nav-container .main-navigation .search-form input::-ms-input-placeholder, .home .site-header-special .nav-container .main-navigation .search-form input::-ms-input-placeholder, .single-adventure_post_type .site-header-special .nav-container .main-navigation .search-form input::-ms-input-placeholder {
     color: #f0e4d1; }
-  .page-template-about .site-header .nav-container .main-navigation .search-form input::placeholder, .home .site-header .nav-container .main-navigation .search-form input::placeholder {
+  .page-template-about .site-header-special .nav-container .main-navigation .search-form input::placeholder, .home .site-header-special .nav-container .main-navigation .search-form input::placeholder, .single-adventure_post_type .site-header-special .nav-container .main-navigation .search-form input::placeholder {
     color: #f0e4d1; }
 
 /* Menus */
@@ -1472,6 +1472,60 @@ object {
     padding: 0; }
   .search-results .site-content .content-area .site-main article .entry-summary .black-btn-wrapper {
     margin-top: 30px; }
+
+.single-adventure_post_type .site-content {
+  width: 100%; }
+  .single-adventure_post_type .site-content .content-area {
+    width: 100%;
+    border: none;
+    margin-top: 0; }
+    .single-adventure_post_type .site-content .content-area .site-main {
+      margin-top: 0;
+      margin-bottom: 50px; }
+      .single-adventure_post_type .site-content .content-area .site-main article {
+        padding: 0;
+        width: 1120px; }
+        .single-adventure_post_type .site-content .content-area .site-main article .entry-header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .single-adventure_post_type .site-content .content-area .site-main article .entry-header .thumbnail-wrapper {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; }
+            .single-adventure_post_type .site-content .content-area .site-main article .entry-header .thumbnail-wrapper img {
+              max-width: none;
+              width: 100vw;
+              height: auto; }
+          .single-adventure_post_type .site-content .content-area .site-main article .entry-header .entry-title {
+            position: static;
+            background: none;
+            color: #2f1339;
+            font-size: 3rem;
+            text-align: left;
+            width: 100%;
+            max-width: none;
+            padding-left: 0;
+            margin-bottom: 0; }
+          .single-adventure_post_type .site-content .content-area .site-main article .entry-header .entry-meta {
+            position: static;
+            background: none;
+            color: #404040;
+            width: 100%;
+            max-width: none;
+            text-align: left;
+            padding: 0;
+            font-size: 1.2rem; }
+      .single-adventure_post_type .site-content .content-area .site-main .social-share {
+        width: 1120px;
+        padding: 0; }
 
 footer {
   width: 100vw;

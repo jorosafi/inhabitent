@@ -525,5 +525,65 @@
 		}
 	}
 
+//Adventures post type
+	.single-adventure_post_type{
+		.site-content{
+			width: 100%;
+			.content-area{
+				width: 100%;
+				border: none;
+				margin-top: 0;
+				.site-main{
+					margin-top: 0;
+					margin-bottom: 50px;
+					article{
+						padding: 0;
+						width: $site__width;
+						.entry-header{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							.thumbnail-wrapper{
+								width: 100vw;
+								height: 100vh;
+								overflow: hidden;
+								img{
+									max-width: none;
+									width: 100vw;
+									height: auto;
+								}
+							}
+							.entry-title{
+								position: static;
+								background: none;
+								color: $color__brand-purple;
+								font-size: 3rem;
+								text-align: left;
+								width: 100%;
+								max-width: none;
+								padding-left: 0;
+								margin-bottom: 0;
+							}
+							.entry-meta{
+								position: static;
+								background: none;
+								color: $color__text-main;
+								width: 100%;
+								max-width: none;
+								text-align: left;
+								padding: 0;
+								font-size: 1.2rem;
+							}
+						}
+					}
+					.social-share{
+						width: $site__width;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+
 
 

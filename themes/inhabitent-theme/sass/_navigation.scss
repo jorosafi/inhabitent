@@ -102,10 +102,10 @@
 }
 
 
-//custom nav bar for home page and about page
+//custom nav bar for home page, adventure posts and about page
 
-.page-template-about, .home{
-	.site-header{
+.page-template-about, .home, .single-adventure_post_type{
+	.site-header-special{
 		background: none;
 		border: none;
 		position: absolute;
