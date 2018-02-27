@@ -5,8 +5,8 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Add your custom post types here...
-// Register Custom Post Type
+
+// Register Custom Post Type for Products
 function product_post_type() {
 
 	$labels = array(
@@ -62,7 +62,7 @@ function product_post_type() {
 }
 add_action( 'init', 'product_post_type', 0 );
 
-// Register Custom Post Type
+// Register Custom Post Type for Adventures
 function adventure_post_type() {
 
 	$labels = array(

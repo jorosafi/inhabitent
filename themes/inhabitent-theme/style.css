@@ -891,9 +891,6 @@ ul {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
 .clearfix {
@@ -942,6 +939,7 @@ ul {
 
 /*--------------------------------------------------------------
 # Content
+Styles for main content area 
 --------------------------------------------------------------*/
 .site-main {
   width: 1120px;
@@ -1219,6 +1217,7 @@ object {
   width: 100vw; }
   .page-template-about .site .site-content .content-area {
     margin-top: 0;
+    border: none;
     width: 100%; }
     .page-template-about .site .site-content .content-area .site-main {
       width: 100%;
@@ -1227,6 +1226,7 @@ object {
         padding: 0; }
         .page-template-about .site .site-content .content-area .site-main article .entry-header {
           height: 100vh;
+          width: 100vw;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -1235,26 +1235,16 @@ object {
                   justify-content: center;
           -webkit-box-align: center;
               -ms-flex-align: center;
-                  align-items: center; }
+                  align-items: center;
+          position: static; }
+          .page-template-about .site .site-content .content-area .site-main article .entry-header .entry-title {
+            position: static;
+            background: none; }
         .page-template-about .site .site-content .content-area .site-main article .entry-content {
           width: 800px;
           margin: 3rem auto; }
           .page-template-about .site .site-content .content-area .site-main article .entry-content h2 {
             text-align: center; }
-
-.page-template-about .entry-header {
-  position: static;
-  display: block;
-  width: 100vw;
-  height: 100vh; }
-
-.page-template-about .entry-title {
-  position: static;
-  background: none; }
-
-.page-template-about .content-area {
-  border: none;
-  width: 100%; }
 
 .post-type-archive-product .site-content {
   width: 1120px;

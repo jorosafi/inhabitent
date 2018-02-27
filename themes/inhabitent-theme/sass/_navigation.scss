@@ -92,46 +92,46 @@
 	}
 }
 
-@keyframes show {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
+//keyframe for animation in nav search bar
+	@keyframes show {
+		0% {
+			width: 0%;
+		}
+		100% {
+			width: 100%;
+		}
+	}
 
 //custom nav bar for home page, adventure posts and about page
 
-.page-template-about, .home, .single-adventure_post_type{
-	.site-header-special{
-		background: none;
-		border: none;
-		position: absolute;
-		.nav-container{
-			.site-branding{
-				.nav-logo{
-					background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
-					background-size: contain;
-					background-repeat: no-repeat;
-					width: 50px;
-					height: 50px;
+	.page-template-about, .home, .single-adventure_post_type{
+		.site-header-special{
+			background: none;
+			border: none;
+			position: absolute;
+			.nav-container{
+				.site-branding{
+					.nav-logo{
+						background:url("../../images/logo/inhabitent-logo-tent-white.svg"),;
+						background-size: contain;
+						background-repeat: no-repeat;
+						width: 50px;
+						height: 50px;
+					}
 				}
-			}
-			.main-navigation{
-				.search-button{
-					color: white;
-				}
-				.search-form{
-					input::placeholder{
-						color: $color__brand-yellow;
+				.main-navigation{
+					.search-button{
+						color: white;
+					}
+					.search-form{
+						input::placeholder{
+							color: $color__brand-yellow;
+						}
 					}
 				}
 			}
 		}
 	}
-}
 
 
 /* Menus */

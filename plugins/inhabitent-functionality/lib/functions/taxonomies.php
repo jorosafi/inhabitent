@@ -5,8 +5,8 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_taxonomy
  */
 
-// Add your custom taxonomies here...
-// Register Custom Taxonomy
+
+// Register Custom Taxonomy for products
 function product_type_taxonomy() {
 
 	$labels = array(

@@ -1,37 +1,37 @@
 //search.php
-.search-results{
-  .site-content{
-    .content-area{
-      .site-main{
-        article{
-          margin: 0 0 30px 0;
-          padding: 10px 0;
-          .entry-title{
-            position: static;
-            background: none;
-            margin: 0;
-            padding: 0;
-            a{
-              color: $color__brand-green;
-            }
-          }
-          .entry-meta{
-            background: none;
-            position: static;
-            color: $color__text-main;
-            text-align: left;
-            padding: 20px 0;
-          }
-          .entry-summary{
-            p{
+  .search-results{
+    .site-content{
+      .content-area{
+        .site-main{
+          article{
+            margin: 0 0 30px 0;
+            padding: 10px 0;
+            .entry-title{
+              position: static;
+              background: none;
+              margin: 0;
               padding: 0;
+              a{
+                color: $color__brand-green;
+              }
             }
-            .black-btn-wrapper{
-              margin-top: 30px;
+            .entry-meta{
+              background: none;
+              position: static;
+              color: $color__text-main;
+              text-align: left;
+              padding: 20px 0;
+            }
+            .entry-summary{
+              p{
+                padding: 0;
+              }
+              .black-btn-wrapper{
+                margin-top: 30px;
+              }
             }
           }
         }
       }
     }
   }
-}
