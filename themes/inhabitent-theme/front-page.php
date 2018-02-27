@@ -97,7 +97,6 @@ get_header(); ?>
 									</div>
 								<?php endif; ?>
 								<div class="entry-meta">
-									<div><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span></div>
 								
 									<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
