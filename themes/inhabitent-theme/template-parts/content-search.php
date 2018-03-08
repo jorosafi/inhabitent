@@ -13,13 +13,13 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<button class="black-btn-wrapper"><a class="black-btn" href="<?php the_permalink(); ?>">Read Entry</a></button>
+		<a class="black-btn" href="<?php the_permalink(); ?>" class="black-btn-wrapper">Read Entry</a>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

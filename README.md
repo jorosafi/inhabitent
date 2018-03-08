@@ -40,23 +40,3 @@ These pages also have their own taxonomy, which was also built using GenerateWP 
 ### Adventure posts
 ![Home Page Screenshot](images/screenshots/adventure.png)
 Finally, the adventure posts are custom post types (also generated with GenerateWP) that act as a different type of blog post. These use the same basic components as the regular blog posts, but the layout is different. The layout for these can be found at single-adventure_post_type.php. 
-
-
-## Installation
-To install this theme locally and make edits, follow these instructions:
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
