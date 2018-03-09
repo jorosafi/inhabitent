@@ -13,7 +13,7 @@ A starter theme called Inhabitent Theme, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called Inhabitent Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 	
@@ -25,7 +25,7 @@ Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I
 
 = Does this theme support any plugins? =
 
-RED Starter Theme includes support for Infinite Scroll in Jetpack.
+Inhabitent Theme includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

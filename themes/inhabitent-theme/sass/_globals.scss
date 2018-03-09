@@ -13,5 +13,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+//Social Share Container
+.social-share{
+  width: 100%;
+  text-align: left;
+  padding: 0 30px 0 0;
+  .black-btn{
+    display: inline-block;
+    svg::after{
+      content: "\00a0"
+    }
+  }
 }

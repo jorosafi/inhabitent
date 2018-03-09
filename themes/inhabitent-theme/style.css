@@ -1,9 +1,9 @@
 /*!
 Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: Rodrigo Samayoa
-Author URI: https://github.com/jorosafi
-Description: A basic ecommerce theme for Wordpress.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -245,6 +245,15 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.social-share {
+  width: 100%;
+  text-align: left;
+  padding: 0 30px 0 0; }
+  .social-share .black-btn {
+    display: inline-block; }
+    .social-share .black-btn svg::after {
+      content: "\00a0"; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
@@ -492,25 +501,18 @@ a {
   text-transform: uppercase;
   font-family: "Novecento", sans-serif; }
 
-.black-btn-wrapper {
-  background: none;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin: 0;
-  padding: 0; }
-  .black-btn-wrapper .black-btn {
-    display: block;
-    border: 1px solid black;
-    font-family: "Novecento", sans-serif;
-    font-size: 0.9rem;
-    width: 125px;
-    padding: 8px 0px;
-    color: black;
-    text-align: center;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    background: none; }
+.black-btn {
+  display: block;
+  border: 1px solid black;
+  font-family: "Novecento", sans-serif;
+  font-size: 0.9rem;
+  width: 125px;
+  padding: 8px 0px;
+  color: black !important;
+  text-align: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: none; }
 
 .error404 .error-404 .widgettitle {
   font-size: 1.5rem;
@@ -603,10 +605,6 @@ table {
             margin-right: 20px; }
         .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after, .error404 .site-content .content-area .site-main article .black-btn::after, .search-results .site-content .content-area .site-main article .black-btn::after {
           content: "\00a0\2192"; }
-      .blog .site-content .content-area .site-main .social-share, .page .site-content .content-area .site-main .social-share, .single .site-content .content-area .site-main .social-share, .single-post .site-content .content-area .site-main .social-share, .archive .site-content .content-area .site-main .social-share, .error404 .site-content .content-area .site-main .social-share, .search-results .site-content .content-area .site-main .social-share {
-        width: 100%;
-        text-align: left;
-        padding: 0 30px; }
       .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area, .error404 .site-content .content-area .site-main .comments-area, .search-results .site-content .content-area .site-main .comments-area {
         width: 100%;
         padding: 30px;
@@ -1082,9 +1080,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 .single-product .site-content .content-area {
   width: 1120px;
   max-width: none;
@@ -1110,8 +1105,6 @@ object {
         margin-top: 0; }
       .single-product .site-content .content-area article .entry-content .product-price {
         margin: 20px 0; }
-      .single-product .site-content .content-area article .entry-content .social-share {
-        padding: 0; }
 
 .single-adventure_post_type .site-content {
   width: 100%; }
@@ -1163,9 +1156,6 @@ object {
             text-align: left;
             padding: 0;
             font-size: 1.2rem; }
-      .single-adventure_post_type .site-content .content-area .site-main .social-share {
-        width: 1120px;
-        padding: 0; }
 
 .search-results .site-content .content-area .site-main article {
   margin: 0 0 30px 0;
@@ -1201,12 +1191,12 @@ object {
       .error404 .site-main .widget ul li {
         padding: 2px 0; }
 
-.page-id-49 .site-main {
+.page-template-default .site-main {
   margin-top: 0; }
-  .page-id-49 .site-main iframe {
+  .page-template-default .site-main iframe {
     width: 100%;
     height: 400px; }
-  .page-id-49 .site-main .entry-title {
+  .page-template-default .site-main .entry-title {
     position: static;
     background: none;
     color: #2f1339;
