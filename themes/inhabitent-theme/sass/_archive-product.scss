@@ -32,18 +32,36 @@
                 width: auto;
               }
             }
-            .entry-title{
-              &::after{
-                width:100%;
-                padding-right: 1rem;
-                content: '...';
-              }
-            }
+            
             .entry-content{
-              display: flex;
-              justify-content: space-between;
+              display: block;
+              position: relative;
               padding: 15px 10px;
               margin: 0;
+              .entry-title{
+                position: absolute;
+                left: 15px;
+                bottom: 19px;
+                background: white;
+                // &::after{
+                //   width:100%;
+                //   padding-right: 1rem;
+                // }
+              }
+              p{
+                // position: absolute;
+                // right: 50%;
+                display: block;
+                margin: 0 auto;
+                width: 35%;
+                padding: 0;
+              }
+              .product-price{
+                position: absolute;
+                right: 15px;
+                bottom: 19px;
+                background: white;
+              }
             }
           }
         }
