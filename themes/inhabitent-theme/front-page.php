@@ -111,6 +111,8 @@ get_header(); ?>
 						wp_reset_postdata(); ?>
 					</ul>
 				<?php endif?>
+
+				<a href="http://localhost:3000/Inhabitent/adventures" class="btn adventures-btn">More Adventures</a>
 			</div> <!-- Adventure Posts -->
 
 		</main><!-- #main -->

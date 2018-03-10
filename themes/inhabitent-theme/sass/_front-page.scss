@@ -1,6 +1,6 @@
 //front-page.php
 
-	//custom page layout for front page content
+  //custom page layout for front page content
   .home {
     .site-content{
       width: 100vw;
@@ -49,22 +49,11 @@
           img{
             height: 80px;
           }
-          .btn{
-            display: block;
-            background: $color__brand-green;
-            color: white;
-            width: 135px;
-            padding: 12px 0;
-            text-transform: uppercase;
-            margin: none;
-            &:hover{
-              background: darken($color__brand-green, 10%);
-            }
           }
         }
       }
     }
-  }
+  
 
 //layout for journal section in front page
   .home{
@@ -87,7 +76,7 @@
           .entry-meta{
             background: none;
             max-width: 100%;
-            min-height: 150px;
+            min-height: 160px;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -108,7 +97,7 @@
                 width: 100%;
               }
             }
-            .black-btn-wrapper{
+            .black-btn{
               position: absolute;
               bottom: 13px;
 
@@ -123,13 +112,13 @@
     margin-top: 0;
   }
 
-  //layout for Adventures section
+//layout for Adventures section
   .home{
     .adventure-posts{
       width: $site__width;
       margin-bottom: 50px;
       ul{
-        margin: 0;
+        margin: 0 0 20px 0;
         padding: 0;
         display: grid;
         grid-template-columns: 560px 280px 280px;
@@ -178,19 +167,18 @@
                 }
               }
             }
-            .black-btn-wrapper{
-              .black-btn{
-                color: white;
-                border: 1px solid white;
-                &:hover{
-                  background: $color__brand-green;
-                  border: none;
-                }
-              }
+            .black-btn{
+              color: white;
+              border: 1px solid white;
               &:hover{
-                background: none;
+                background: $color__brand-green;
+                border: none;
               }
             }
+            &:hover{
+              background: none;
+            }
+            
           }
         }
         li:first-child{

@@ -251,9 +251,20 @@ th {
   text-align: left;
   padding: 0 30px 0 0; }
   .social-share .black-btn {
-    display: inline-block; }
-    .social-share .black-btn svg::after {
-      content: "\00a0"; }
+    display: inline-block;
+    text-decoration: none; }
+    .social-share .black-btn p {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0;
+      text-transform: uppercase;
+      font-family: "Novecento", sans-serif; }
+      .social-share .black-btn p::before {
+        content: "\00a0"; }
+    .social-share .black-btn:hover {
+      background: #248A83;
+      color: white;
+      border: none; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
@@ -316,6 +327,10 @@ textarea {
   color: #404040;
   font-family: "Merriweather", sans-serif;
   line-height: 1.75; }
+
+a {
+  color: #248A83;
+  text-decoration: none; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -384,14 +399,14 @@ big {
   font-family: "Novecento", sans-serif;
   text-transform: uppercase; }
 
-a {
+li a {
   color: #248A83;
   text-decoration: none; }
-  a:hover, a:focus, a:active {
+  li a:hover, li a:focus, li a:active {
     color: midnightblue; }
-  a:focus {
+  li a:focus {
     outline: thin dotted; }
-  a:hover, a:active {
+  li a:hover, li a:active {
     outline: 0; }
 
 .home .site-header-special .menu-item a, .page-template-about .site-header-special .menu-item a, .single-adventure_post_type .site-header-special .menu-item a {
@@ -404,10 +419,12 @@ a {
   color: white;
   background: #248A83;
   font-size: 2.1rem; }
-  .entry-title a {
-    color: white; }
-  .entry-title a:hover {
-    color: #a1a1a1; }
+
+a {
+  color: white; }
+
+a:hover {
+  color: #a1a1a1; }
 
 .entry-meta {
   background: #248A83;
@@ -418,10 +435,11 @@ a {
   text-align: right;
   font-size: 1rem;
   font-family: "Novecento", sans-serif; }
-  .entry-meta a {
-    text-decoration: none;
+  .entry-meta .comments-link a {
     color: white; }
-  .entry-meta a:hover {
+  .entry-meta .comments-link a {
+    text-decoration: none; }
+  .entry-meta .comments-link a:hover {
     color: #f0e4d1; }
 
 .home h2 {
@@ -437,7 +455,8 @@ a {
   font-weight: 400; }
 
 .home .product-type-block-wrapper .btn {
-  font-family: "Novecento", sans-serif; }
+  font-family: "Novecento", sans-serif;
+  text-decoration: none; }
 
 .home .inhabitent-journal .entry-meta {
   font-size: 0.75rem;
@@ -449,6 +468,9 @@ a {
     line-height: 1.25;
     font-size: 1.3rem;
     font-weight: 700; }
+
+.adventures-btn {
+  font-size: 1.2rem; }
 
 .page-template-about h1 {
   margin: 0;
@@ -475,11 +497,11 @@ a {
   text-transform: uppercase;
   font-family: "Novecento", sans-serif; }
 
-.post-type-archive-product .page-header .product-type-blocks p {
+.post-type-archive-product .product-type-blocks p {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-family: "Novecento", sans-serif; }
-  .post-type-archive-product .page-header .product-type-blocks p:hover {
+  .post-type-archive-product .product-type-blocks p:hover {
     color: #2f1339; }
 
 .adventure .byline {
@@ -508,11 +530,24 @@ a {
   font-size: 0.9rem;
   width: 125px;
   padding: 8px 0px;
-  color: black !important;
+  color: black;
   text-align: center;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   background: none; }
+
+.btn {
+  display: inline;
+  background: #248A83;
+  color: white;
+  padding: 12px 12px;
+  text-transform: uppercase;
+  margin: none;
+  font-family: "Novecento", sans-serif; }
+  .btn:hover {
+    background: #19625d;
+    text-decoration: none;
+    color: white; }
 
 .error404 .error-404 .widgettitle {
   font-size: 1.5rem;
@@ -601,8 +636,11 @@ table {
           text-transform: uppercase;
           color: #404040;
           font-family: "Novecento", sans-serif; }
-          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links, .error404 .site-content .content-area .site-main article .entry-footer .cat-links, .search-results .site-content .content-area .site-main article .entry-footer .cat-links {
+          .blog .site-content .content-area .site-main article .entry-footer .cat-links, .blog .site-content .content-area .site-main article .entry-footer .tags-links, .page .site-content .content-area .site-main article .entry-footer .cat-links, .page .site-content .content-area .site-main article .entry-footer .tags-links, .single .site-content .content-area .site-main article .entry-footer .cat-links, .single .site-content .content-area .site-main article .entry-footer .tags-links, .single-post .site-content .content-area .site-main article .entry-footer .cat-links, .single-post .site-content .content-area .site-main article .entry-footer .tags-links, .archive .site-content .content-area .site-main article .entry-footer .cat-links, .archive .site-content .content-area .site-main article .entry-footer .tags-links, .error404 .site-content .content-area .site-main article .entry-footer .cat-links, .error404 .site-content .content-area .site-main article .entry-footer .tags-links, .search-results .site-content .content-area .site-main article .entry-footer .cat-links, .search-results .site-content .content-area .site-main article .entry-footer .tags-links {
             margin-right: 20px; }
+            .blog .site-content .content-area .site-main article .entry-footer .cat-links a, .blog .site-content .content-area .site-main article .entry-footer .tags-links a, .page .site-content .content-area .site-main article .entry-footer .cat-links a, .page .site-content .content-area .site-main article .entry-footer .tags-links a, .single .site-content .content-area .site-main article .entry-footer .cat-links a, .single .site-content .content-area .site-main article .entry-footer .tags-links a, .single-post .site-content .content-area .site-main article .entry-footer .cat-links a, .single-post .site-content .content-area .site-main article .entry-footer .tags-links a, .archive .site-content .content-area .site-main article .entry-footer .cat-links a, .archive .site-content .content-area .site-main article .entry-footer .tags-links a, .error404 .site-content .content-area .site-main article .entry-footer .cat-links a, .error404 .site-content .content-area .site-main article .entry-footer .tags-links a, .search-results .site-content .content-area .site-main article .entry-footer .cat-links a, .search-results .site-content .content-area .site-main article .entry-footer .tags-links a {
+              color: #248A83;
+              text-decoration: none; }
         .blog .site-content .content-area .site-main article .black-btn::after, .page .site-content .content-area .site-main article .black-btn::after, .single .site-content .content-area .site-main article .black-btn::after, .single-post .site-content .content-area .site-main article .black-btn::after, .archive .site-content .content-area .site-main article .black-btn::after, .error404 .site-content .content-area .site-main article .black-btn::after, .search-results .site-content .content-area .site-main article .black-btn::after {
           content: "\00a0\2192"; }
       .blog .site-content .content-area .site-main .comments-area, .page .site-content .content-area .site-main .comments-area, .single .site-content .content-area .site-main .comments-area, .single-post .site-content .content-area .site-main .comments-area, .archive .site-content .content-area .site-main .comments-area, .error404 .site-content .content-area .site-main .comments-area, .search-results .site-content .content-area .site-main .comments-area {
@@ -1317,6 +1355,11 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between; }
 
+.post-type-archive-product .btn {
+  background: none;
+  color: #248A83;
+  text-decoration: none; }
+
 .home .site-content {
   width: 100vw; }
   .home .site-content .content-area {
@@ -1377,16 +1420,6 @@ object {
         border-color: #d99054; }
       .home .shop-stuff .product-type-blocks .product-type-block-wrapper img {
         height: 80px; }
-      .home .shop-stuff .product-type-blocks .product-type-block-wrapper .btn {
-        display: block;
-        background: #248A83;
-        color: white;
-        width: 135px;
-        padding: 12px 0;
-        text-transform: uppercase;
-        margin: none; }
-        .home .shop-stuff .product-type-blocks .product-type-block-wrapper .btn:hover {
-          background: #19625d; }
 
 .home .inhabitent-journal {
   width: 1120px; }
@@ -1415,7 +1448,7 @@ object {
       .home .inhabitent-journal ul li .entry-meta {
         background: none;
         max-width: 100%;
-        min-height: 150px;
+        min-height: 160px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1440,7 +1473,7 @@ object {
           .home .inhabitent-journal ul li .entry-meta .entry-title a {
             color: #248A83;
             width: 100%; }
-        .home .inhabitent-journal ul li .entry-meta .black-btn-wrapper {
+        .home .inhabitent-journal ul li .entry-meta .black-btn {
           position: absolute;
           bottom: 13px; }
 
@@ -1451,7 +1484,7 @@ object {
   width: 1120px;
   margin-bottom: 50px; }
   .home .adventure-posts ul {
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     display: grid;
     grid-template-columns: 560px 280px 280px;
@@ -1506,13 +1539,13 @@ object {
             color: white; }
             .home .adventure-posts ul li .entry-meta .entry-title a:hover {
               color: #f0e4d1; }
-        .home .adventure-posts ul li .entry-meta .black-btn-wrapper .black-btn {
+        .home .adventure-posts ul li .entry-meta .black-btn {
           color: white;
           border: 1px solid white; }
-          .home .adventure-posts ul li .entry-meta .black-btn-wrapper .black-btn:hover {
+          .home .adventure-posts ul li .entry-meta .black-btn:hover {
             background: #248A83;
             border: none; }
-        .home .adventure-posts ul li .entry-meta .black-btn-wrapper:hover {
+        .home .adventure-posts ul li .entry-meta:hover {
           background: none; }
     .home .adventure-posts ul li:first-child {
       grid-area: big;

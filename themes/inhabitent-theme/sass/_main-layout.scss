@@ -26,8 +26,12 @@
               text-transform: uppercase;
               color: $color__text-main;
               font-family: $font__headings;
-              .cat-links{
+              .cat-links, .tags-links{
                 margin-right: 20px;
+                a{
+                  color: $color__brand-green;
+                  text-decoration: none;
+                }
               }
             }
             .black-btn{

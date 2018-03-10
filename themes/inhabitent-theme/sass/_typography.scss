@@ -17,6 +17,11 @@
 		line-height: $font__line-height-body;
 	}
 
+	a{
+		color: $color__brand-green;
+		text-decoration: none;
+	}
+
 /* Headings */
 
 	h1, h2, h3, h4, h5, h6 {
@@ -99,24 +104,26 @@
 		text-transform: uppercase;
 	}
 
-	a {
-		color: $color__brand-green;
-		text-decoration: none;
+	li{
+		a {
+			color: $color__brand-green;
+			text-decoration: none;
 
-		&:visited {
-			// color: $color__link-visited;
-		}
-		&:hover,
-		&:focus,
-		&:active {
-			color: $color__link-hover;
-		}
-		&:focus {
-			outline: thin dotted;
-		}
-		&:hover,
-		&:active {
-			outline: 0;
+			&:visited {
+				// color: $color__link-visited;
+			}
+			&:hover,
+			&:focus,
+			&:active {
+				color: $color__link-hover;
+			}
+			&:focus {
+				outline: thin dotted;
+			}
+			&:hover,
+			&:active {
+				outline: 0;
+			}
 		}
 	}
 
@@ -141,13 +148,15 @@
 		color: white;
 		background: $color__brand-green;
 		font-size: 2.1rem;
+		}
 		a{
 			color: white;
 		}
 		a:hover{
 			color: $color__brand-light-grey;
 		}
-	}
+	
+
 
 	.entry-meta{
 		background: $color__brand-green;
@@ -158,13 +167,17 @@
 		text-align: right;
 		font-size: 1rem;
 		font-family: $font__headings;
+		.comments-link{
+			a{
+				color: white;
+			}
 		a{
 			text-decoration: none;
-			color: white;
 		}
 		a:hover{
 			color: $color__brand-yellow;
 		}
+	}
 	}
 
 
@@ -188,6 +201,7 @@
 		.product-type-block-wrapper{
 			.btn{
 				font-family: $font__headings;
+				text-decoration: none;
 			}
 		}
 		.inhabitent-journal{
@@ -204,6 +218,10 @@
 				}
 			}
 		}
+	}
+
+	.adventures-btn{
+		font-size: 1.2rem;
 	}
 
 //About Page
@@ -251,7 +269,6 @@
 	}
 
 	.post-type-archive-product{
-		.page-header{
 			.product-type-blocks{
 				p{
 					text-transform: uppercase;
@@ -262,7 +279,6 @@
 					}
 				}
 			}
-		}
 	}
 
 //Adventure Page
@@ -301,10 +317,27 @@
 		font-size: 0.9rem;
 		width: 125px;
 		padding: 8px 0px;
-		color: black !important;
+		color: black;
 		text-align: center;
 		flex-basis: 40%;
 		background: none;
+	}
+
+//Green Button
+
+	.btn{
+		display: inline;
+		background: $color__brand-green;
+		color: white;
+		padding: 12px 12px;
+		text-transform: uppercase;
+		margin: none;
+		font-family: $font__headings;
+		&:hover{
+			background: darken($color__brand-green, 10%);
+			text-decoration: none;
+			color: white;
+		}
 	}
 
 //404 page

@@ -15,9 +15,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<div class="social-share">
-				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i>Like</a>
-				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i>Tweet</a>
-				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-pinterest"></i>Pin</a>
+				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i> <p>Like</p></a>
+				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-twitter"></i> <p>Tweet</p> </a>
+				<a class="black-btn" href="<?php the_permalink(); ?>"><i class="fab fa-pinterest"></i> <p>Pin</p> </a>
 			</div>
 
 			<?php
