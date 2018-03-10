@@ -1,56 +1,55 @@
 //layout for pages with generic layout --> home.php, page.php, single.php, search and archive.php
 
-  .blog, .page, .single, .single-post, .archive, .error404, .search-results{
+  .blog, .page, .single, .single-post, .archive, .error404, .search{
     .site-content{
       margin: 0 auto;
-      .content-area{
-        width: 70%;
-        border-right: $solid__border;
-        margin-top: 60px;
-        .site-main{
-          width: 100%;
-          .page-header{
-            width: 100%;
-            h1{
-              width: 95%;
-              text-align: left;
-              border-bottom: $solid__border;
-            }
-
-          }
-          article{
-            width:100%;
-            padding-left: 0;
-            .entry-footer{
-              background: none;
-              text-transform: uppercase;
-              color: $color__text-main;
-              font-family: $font__headings;
-              .cat-links, .tags-links{
-                margin-right: 20px;
-                a{
-                  color: $color__brand-green;
-                  text-decoration: none;
-                }
-              }
-            }
-            .black-btn{
-              &::after{
-                content: "\00a0\2192";
-              }
-            }
-          }
-          .comments-area{
-            width: 100%;
-            padding: 30px;
-            text-align: left;
+    }
+    .content-area{
+      width: 70%;
+      border-right: $solid__border;
+      margin-top: 60px;
+    }
+    .site-main{
+      width: 100%;
+    }
+    .page-header{
+      width: 100%;
+      h1{
+        width: 95%;
+        text-align: left;
+        border-bottom: $solid__border;
+      }
+    }
+    article{
+      width:100%;
+      padding-left: 0;
+      .entry-footer{
+        background: none;
+        text-transform: uppercase;
+        color: $color__text-main;
+        font-family: $font__headings;
+        .cat-links, .tags-links{
+          margin-right: 20px;
+          a{
+            color: $color__brand-green;
+            text-decoration: none;
           }
         }
       }
-      .widget-area{
-        width: 30%;
-        margin-top: 60px;
-        //widget styling in widgets.scss
+      .black-btn{
+        &::after{
+          content: "\00a0\2192";
+        }
       }
+    }
+    .comments-area{
+      width: 100%;
+      padding: 30px;
+      text-align: left;
+    }
+    .widget-area{
+      width: 30%;
+      margin-top: 60px;
+      //widget styling in widgets.scss
     }
   }
