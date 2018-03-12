@@ -1380,6 +1380,83 @@ object {
   color: #248A83;
   text-decoration: none; }
 
+.post-type-archive-adventure_post_type .site-content {
+  margin-bottom: 50px; }
+
+.post-type-archive-adventure_post_type .content-area {
+  width: 100% !important;
+  max-width: none;
+  border: none; }
+
+.post-type-archive-adventure_post_type .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.post-type-archive-adventure_post_type .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 30px; }
+  .post-type-archive-adventure_post_type .page-header .page-title {
+    text-align: center;
+    border: none; }
+
+.post-type-archive-adventure_post_type article {
+  width: 49%;
+  height: 550px;
+  margin: 20px 0;
+  padding: 0; }
+
+.post-type-archive-adventure_post_type .entry-header {
+  height: 100%;
+  overflow: hidden; }
+  .post-type-archive-adventure_post_type .entry-header img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    margin: 0 auto;
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
+.post-type-archive-adventure_post_type .entry-title {
+  background: none;
+  max-width: none;
+  width: 90%;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  margin: 20px 0;
+  font-weight: normal; }
+  .post-type-archive-adventure_post_type .entry-title a {
+    width: 100%;
+    color: white; }
+    .post-type-archive-adventure_post_type .entry-title a:hover {
+      color: #f0e4d1; }
+
+.post-type-archive-adventure_post_type .black-btn {
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 300px;
+  left: 20px; }
+  .post-type-archive-adventure_post_type .black-btn::after {
+    content: " " !important; }
+  .post-type-archive-adventure_post_type .black-btn:hover {
+    background: #248A83;
+    border: none; }
+
 .home .site-content {
   width: 100vw; }
   .home .site-content .content-area {

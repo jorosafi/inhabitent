@@ -112,7 +112,7 @@ get_header(); ?>
 					</ul>
 				<?php endif?>
 
-				<a href="http://localhost:3000/Inhabitent/adventures" class="btn adventures-btn">More Adventures</a>
+				<a href="http://localhost:3000/Inhabitent/adventure_post_type/" class="btn adventures-btn">More Adventures</a>
 			</div> <!-- Adventure Posts -->
 
 		</main><!-- #main -->

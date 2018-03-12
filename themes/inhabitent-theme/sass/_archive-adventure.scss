@@ -1,0 +1,81 @@
+.post-type-archive-adventure_post_type{
+  .site-content{
+    margin-bottom: 50px;
+  }
+  .content-area{
+    width: 100% !important;
+    max-width: none;
+    border: none;
+  }
+  .site-main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .page-header{
+    border-bottom: $dashed__border;
+    margin-bottom: 30px;
+    .page-title{
+      text-align: center;
+      border: none;
+    }
+  }
+
+  article{
+    width: 49%;
+    height: 550px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .entry-header{
+    height: 100%;
+    overflow: hidden;
+
+    img{
+      height: 100%;
+      width: auto;
+      max-width: none;
+      margin: 0 auto;
+      filter: brightness(60%);
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      position: absolute;
+    }
+  }
+
+  .entry-title{
+    background: none;
+    max-width: none;
+    width: 90%;
+    text-align: left;
+    font-family: $font__main;
+    margin: 20px 0;
+    font-weight: normal;
+    a{
+      width: 100%;
+      color: white;
+      &:hover{
+        color: $color__brand-yellow;
+      }
+    }
+  }
+
+  .black-btn{
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+    &::after{
+      content: " " !important;
+    }
+    &:hover{
+      background: $color__brand-green;
+      border: none;
+    }
+  }
+
+}
